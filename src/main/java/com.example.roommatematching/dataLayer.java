@@ -115,7 +115,8 @@ public class dataLayer {
 //            // For each student, initialize their ID and preference list.
 //            Student student = new Student(row.getCell(7).getStringCellValue());
 //            // add student to students (list) to keep track of ALL students.
-//            students.add(student);
+//            students.add(student);Student ID: tbh7cm
+//Student ID: abc3de
 //            int j = 0;
 //            while (j < sheet.getPhysicalNumberOfRows()) {
 //                if (j != i) {

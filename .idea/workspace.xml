@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="added main">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added feature to read Excel and add stat to student class.">
       <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" afterDir="false" />
@@ -151,7 +151,7 @@
       <workItem from="1684890442863" duration="2360000" />
       <workItem from="1684893960023" duration="188000" />
       <workItem from="1684894161230" duration="2378000" />
-      <workItem from="1684935024040" duration="15627000" />
+      <workItem from="1684935024040" duration="15909000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -174,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684893799959</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added feature to read Excel and add stat to student class.">
+      <created>1684957904146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684957904146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +194,7 @@
     <MESSAGE value="added module info" />
     <MESSAGE value="added gradle information" />
     <MESSAGE value="added main" />
-    <option name="LAST_COMMIT_MESSAGE" value="added main" />
+    <MESSAGE value="Added feature to read Excel and add stat to student class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feature to read Excel and add stat to student class." />
   </component>
 </project>
