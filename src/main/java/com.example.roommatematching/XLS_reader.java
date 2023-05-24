@@ -1,27 +1,28 @@
 package com.example.roommatematching;
-
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Hashtable;
+import java.io.InputStream;
 
 public class XLS_reader {
-    static Sheet getSheet(String fileName) throws IOException {
-        FileInputStream input = new FileInputStream(fileName);
-        Workbook workbook;
-        if (fileName.endsWith(".xlsx")) {
-            workbook = new XSSFWorkbook(input);
-            return workbook.getSheetAt(0);
-        } else if (fileName.endsWith(".xls")) {
-            workbook = new HSSFWorkbook(input);
-            return workbook.getSheetAt(0);
-        } else {
-            throw new RuntimeException("Invalid input file type");
+    // handles the workbook class. Keeps it private and only switches between sheets when needed.
+    private static Workbook workbook;
+    static Workbook loadWorkbook(String fileName) {
+        try {
+            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+            InputStream input = classloader.getResourceAsStream(fileName);
+            if (fileName.endsWith(".xlsx")) {
+                workbook = new XSSFWorkbook(input);
+                workbook.createSheet("groups");
+            } else if (fileName.endsWith(".xls")) {
+                workbook = new HSSFWorkbook(input);
+                workbook.createSheet("groups");
+            } else {
+                throw new RuntimeException("Invalid input file type");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return workbook;
     }
 }
