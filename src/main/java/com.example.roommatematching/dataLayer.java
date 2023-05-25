@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class dataLayer {
-    private static List<Student> students = new ArrayList<>();
+    private static final List<Student> students = new ArrayList<>();
     private static final String fileName = "roommateSheet.xlsx";
     private static final Workbook workbook = XLS_reader.loadWorkbook(fileName);
     public static void initializeAllStudents() {
@@ -19,114 +19,151 @@ public class dataLayer {
                 Student student = new Student();
                 for (Cell cell: row) {
                     switch (cell.getColumnIndex()) {
-                        case (6):
+                        case (6) -> {
                             // Full Name
+                            System.out.println("Name: " + cell.getStringCellValue());
                             student.setName(cell.getStringCellValue());
-                        case (7):
+                        }
+                        case (7) -> {
                             // computing ID
+                            System.out.println("ID: " + cell.getStringCellValue());
                             student.setID(cell.getStringCellValue());
-                        case (8):
+                        }
+                        case (8) -> {
                             // preference for three
                             student.set_preference_of_roommates_for_three(cell.getStringCellValue());
-                        case (9):
+                            System.out.println("Preference for three: " + cell.getStringCellValue());
+                        }
+                        case (9) -> {
                             // preference for two
                             student.set_preference_of_roommates_for_two(cell.getStringCellValue());
-                        case (10):
+                            System.out.println("Preference for two: " + cell.getStringCellValue());
+                        }
+                        case (10) -> {
                             // preference for one
+                            System.out.println("Preference for one: " + cell.getStringCellValue());
                             student.set_preference_of_roommates_for_one(cell.getStringCellValue());
-                        case (11):
+                        }
+                        case (11) -> {
                             // number of roommates already
                             try {
                                 student.set_number_of_roommates(cell.getNumericCellValue());
                             } catch (IllegalStateException e) {
                                 student.set_number_of_roommates(0);
                             }
-                        case (12):
+                            System.out.println("Number of roommates: " + cell.getStringCellValue());
+                        }
+                        case (12) -> {
                             // self-cleanliness
-                            student.set_self_cleanliness(formatter.formatCellValue(cell));
-                        case (13):
+                            System.out.println("self-Cleanliness: " + cell.getNumericCellValue());
+                            student.set_self_cleanliness(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (13) -> {
                             // other-cleanliness
-                            student.set_other_cleanliness(formatter.formatCellValue(cell));
-                        case (14):
+                            System.out.println("Other-Cleanliness: " + cell.getNumericCellValue());
+                            student.set_other_cleanliness(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (14) -> {
                             // cleanliness-weight
-                            student.set_cleanliness_weight(formatter.formatCellValue(cell));
-                        case (15):
+                            System.out.println("Cleanliness-Weight: " + cell.getNumericCellValue());
+                            student.set_cleanliness_weight(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (15) -> {
                             // self-guests
-                            student.set_self_guests(formatter.formatCellValue(cell));
-                        case (16):
+                            System.out.println("Self-Guests: " + cell.getNumericCellValue());
+                            student.set_self_guests(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (16) -> {
                             // other-guests
-                            student.set_other_guests(formatter.formatCellValue(cell));
-                        case (17):
+                            System.out.println("Other-Guests: " + cell.getNumericCellValue());
+                            student.set_other_guests(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (17) -> {
                             // guests weight
-                            student.set_guests_weight(formatter.formatCellValue(cell));
-                        case (18):
+                            System.out.println("Guests Weight: " + cell.getNumericCellValue());
+                            student.set_guests_weight(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (18) -> {
                             // hangout
-                            student.set_hangout(formatter.formatCellValue(cell));
-                        case (19):
+                            System.out.println("Hangout: " + cell.getNumericCellValue());
+                            student.set_hangout(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (19) -> {
                             // hangout weight
-                            student.set_hangout_weight(formatter.formatCellValue(cell));
-                        case (20):
+                            System.out.println("Hangout Weight: " + cell.getNumericCellValue());
+                            student.set_hangout_weight(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (20) -> {
                             // sleep
+                            System.out.println("Sleep: " + cell.getStringCellValue());
                             student.set_sleep(formatter.formatCellValue(cell));
-                        case (21):
+                        }
+                        case (21) -> {
                             // sleep weight
-                            student.set_sleep_weight(formatter.formatCellValue(cell));
-                        case (22):
+                            System.out.println("Sleep Weight: " + cell.getNumericCellValue());
+                            student.set_sleep_weight(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (22) -> {
                             // self-extroversion
-                            student.set_self_extroversion(formatter.formatCellValue(cell));
-                        case (23):
+                            System.out.println("Self-Extroversion: " + cell.getNumericCellValue());
+                            student.set_self_extroversion(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (23) -> {
                             // other-extroversion
-                            student.set_other_extroversion(formatter.formatCellValue(cell));
-                        case (24):
+                            System.out.println("Other Extroversion: " + cell.getNumericCellValue());
+                            student.set_other_extroversion(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (24) -> {
                             // extroversion weight
-                            student.set_extroversion_weight(formatter.formatCellValue(cell));
-                        case (25):
+                            System.out.println("Extroversion Weight: " + cell.getNumericCellValue());
+                            student.set_extroversion_weight(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (25) -> {
                             // self-presence
-                            student.set_self_presence(formatter.formatCellValue(cell));
-                        case (26):
+                            System.out.println("Self-Presence: " + cell.getNumericCellValue());
+                            student.set_self_presence(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (26) -> {
                             // other-presence
-                            student.set_other_presence(formatter.formatCellValue(cell));
-                        case (27):
+                            System.out.println("Other-Presence: " + cell.getNumericCellValue());
+                            student.set_other_presence(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (27) -> {
                             // presence weight
-                            student.set_presence_weight(formatter.formatCellValue(cell));
-                        case (28):
+                            System.out.println("Presence-Weight: " + cell.getNumericCellValue());
+                            student.set_presence_weight(Integer.parseInt(formatter.formatCellValue(cell)));
+                        }
+                        case (28) -> {
                             // religion
+                            System.out.println("Religion: " + cell.getStringCellValue());
                             student.set_religion(formatter.formatCellValue(cell));
-                        case (29):
+                        }
+                        case (29) -> {
                             // special information
+                            System.out.println("Special Information: " + cell.getStringCellValue());
                             student.set_special_information(formatter.formatCellValue(cell));
-                        default:
-                            break;
+                        }
+                        default -> {
+                        }
                     }
             }
+                System.out.println("\n");
                 students.add(student);
             }
         }
-        for (Student student : students) {
-            System.out.println("Student ID: "+student.getid());
+    }
+    public static void createPreferenceLists() {
+        for (int i=0;i<students.size();i++) {
+            students.get(i).clear_preference_list();
+            for (int j=0;j<students.size();j++) {
+                if (j != i) {
+                    // for every student other than the one we are inquiring, calculate their match scores
+                    // and add their preference to their list.
+                    StudentPreference preference = new StudentPreference(students.get(i), students.get(j));
+                    students.get(i).add_preference(preference);
+                }
+            }
+            students.get(i).print_preference_list();
         }
     }
-//    public static void matchStudents() {
-//        Sheet sheet;
-//        sheet = workbook.getSheetAt(0);
-//        assert sheet != null;
-//        for (int i = 0; i<sheet.getPhysicalNumberOfRows();i++) {
-//            Row row = sheet.getRow(i);
-//            // For each student, initialize their ID and preference list.
-//            Student student = new Student(row.getCell(7).getStringCellValue());
-//            // add student to students (list) to keep track of ALL students.
-//            students.add(student);Student ID: tbh7cm
-//Student ID: abc3de
-//            int j = 0;
-//            while (j < sheet.getPhysicalNumberOfRows()) {
-//                if (j != i) {
-//                    Row row1 = sheet.getRow(j);
-//                    Student new_student = new Student(row1.getCell(7).getStringCellValue());
-//                    StudentPreference preference = new StudentPreference();
-//                }
-//
-//            }
-//
-//        }
-//    }
 }

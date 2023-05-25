@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added feature to read Excel and add stat to student class.">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" afterDir="false" />
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Additional Commit for Excel Reading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/XLS_reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/XLS_reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,6 +147,8 @@
       <workItem from="1684893960023" duration="188000" />
       <workItem from="1684894161230" duration="2378000" />
       <workItem from="1684935024040" duration="15909000" />
+      <workItem from="1684958960766" duration="1193000" />
+      <workItem from="1685031723665" duration="8975000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -181,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684957904146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Additional Commit for Excel Reading">
+      <created>1684958983058</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684958983058</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +199,7 @@
     <MESSAGE value="added gradle information" />
     <MESSAGE value="added main" />
     <MESSAGE value="Added feature to read Excel and add stat to student class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature to read Excel and add stat to student class." />
+    <MESSAGE value="Additional Commit for Excel Reading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional Commit for Excel Reading" />
   </component>
 </project>

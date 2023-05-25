@@ -1,5 +1,6 @@
 package com.example.roommatematching;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -8,29 +9,29 @@ public class Student {
     private String name;
     private String id;
     private static String groupID;
-    private static List<StudentPreference> preference_list;
+    private static final List<StudentPreference> preference_list = new ArrayList<>();
 
-    private String self_cleanliness;
-    private String other_cleanliness;
-    private String cleanliness_weight;
+    private double self_cleanliness;
+    private double other_cleanliness;
+    private double cleanliness_weight;
 
-    private String self_guests;
-    private String other_guests;
-    private String guests_weight;
+    private double self_guests;
+    private double other_guests;
+    private double guests_weight;
 
-    private String hangout;
-    private String hangout_weight;
+    private double hangout;
+    private double hangout_weight;
 
     private String sleep;
-    private String sleep_weight;
+    private double sleep_weight;
 
-    private String self_extroversion;
-    private String other_extroversion;
-    private String extroversion_weight;
+    private double self_extroversion;
+    private double other_extroversion;
+    private double extroversion_weight;
 
-    private String self_presence;
-    private String other_presence;
-    private String presence_weight;
+    private double self_presence;
+    private double other_presence;
+    private double presence_weight;
 
     private String religion;
     private String special_information;
@@ -41,84 +42,113 @@ public class Student {
     public static void setGroup(String id) {
         groupID = id;
     }
+
     public void setID(String computing_id) {
-         this.id = computing_id;
+        this.id = computing_id;
     }
+
     public void setName(String n) {
         this.name = n;
     }
+
     public void set_preference_of_roommates_for_three(String x) {
         this.preferred_amount_of_roommates[0] = x;
     }
+
     public void set_preference_of_roommates_for_two(String x) {
         this.preferred_amount_of_roommates[1] = x;
     }
+
     public void set_preference_of_roommates_for_one(String x) {
         this.preferred_amount_of_roommates[2] = x;
     }
+
     public void set_number_of_roommates(double x) {
         this.number_of_roommates = x;
     }
-    public void set_self_cleanliness(String x) {
+
+    public void set_self_cleanliness(double x) {
         this.self_cleanliness = x;
     }
-    public void set_other_cleanliness(String x) {
+
+    public void set_other_cleanliness(double x) {
         this.other_cleanliness = x;
     }
-    public void set_cleanliness_weight(String x) {
+
+    public void set_cleanliness_weight(double x) {
         this.cleanliness_weight = x;
     }
-    public void set_self_guests(String x) {
+
+    public void set_self_guests(double x) {
         this.self_guests = x;
     }
-    public void set_other_guests(String x) {
+
+    public void set_other_guests(double x) {
         this.other_guests = x;
     }
-    public void set_guests_weight(String x) {
+
+    public void set_guests_weight(double x) {
         this.guests_weight = x;
     }
 
-    public void set_hangout(String x) {
+    public void set_hangout(double x) {
         this.hangout = x;
     }
-    public void set_hangout_weight(String x) {
+
+    public void set_hangout_weight(double x) {
         this.hangout_weight = x;
     }
+
     public void set_sleep(String x) {
         this.sleep = x;
     }
-    public void set_sleep_weight(String x) {
+
+    public void set_sleep_weight(double x) {
         this.sleep_weight = x;
     }
-    public void set_self_extroversion(String x) {
+
+    public void set_self_extroversion(double x) {
         this.self_extroversion = x;
     }
-    public void set_other_extroversion(String x) {
+
+    public void set_other_extroversion(double x) {
         this.other_extroversion = x;
     }
-    public void set_extroversion_weight(String x) {
+
+    public void set_extroversion_weight(double x) {
         this.extroversion_weight = x;
     }
-    public void set_self_presence(String x) {
+
+    public void set_self_presence(double x) {
         this.self_presence = x;
     }
-    public void set_other_presence(String x) {
+
+    public void set_other_presence(double x) {
         this.other_presence = x;
     }
-    public void set_presence_weight(String x) {
+
+    public void set_presence_weight(double x) {
         this.presence_weight = x;
     }
+
     public void set_religion(String x) {
         this.religion = x;
     }
+
     public void set_special_information(String x) {
         this.special_information = x;
     }
+
+
     public static String getGroup() {
         return groupID;
     }
-    public static void add_preference(StudentPreference preference) {
+
+    public void add_preference(StudentPreference preference) {
         preference_list.add(preference);
+    }
+    public void clear_preference_list() {
+        preference_list.clear();
     }
 
     public static void remove_preference(StudentPreference preference) {
@@ -126,10 +156,11 @@ public class Student {
     }
 
     // Should only be used for debugging as this information should be hidden.
-    public static void print_preference_list() {
+    public void print_preference_list() {
+        System.out.println("Student Inquired: "+this.name);
         for (StudentPreference preference : preference_list) {
             System.out.println("ID: " + preference.computing_id);
-            System.out.println("Match Score: " + preference.match_score);
+            System.out.println("Match Score: " + preference.match_score+"\n");
         }
     }
 
@@ -137,5 +168,67 @@ public class Student {
     public String getid() {
         return this.id;
     }
-
+    public String getSpecial_information() {
+        return special_information;
+    }
+    public String getReligion() {
+        return religion;
+    }
+    public double getPresence_weight() {
+        return presence_weight;
+    }
+    public double getOther_presence() {
+        return other_presence;
+    }
+    public double getSelf_presence() {
+        return self_presence;
+    }
+    public double getExtroversion_weight() {
+        return extroversion_weight;
+    }
+    public double getOther_extroversion() {
+        return other_extroversion;
+    }
+    public double getSelf_extroversion() {
+        return self_extroversion;
+    }
+    public double getSleep_weight() {
+        return sleep_weight;
+    }
+    public String getSleep() {
+        return sleep;
+    }
+    public double getHangout_weight() {
+        return hangout_weight;
+    }
+    public double getHangout() {
+        return hangout;
+    }
+    public double getGuests_weight() {
+        return guests_weight;
+    }
+    public double getOther_guests() {
+        return other_guests;
+    }
+    public double getSelf_guests() {
+        return self_guests;
+    }
+    public double getCleanliness_weight() {
+        return cleanliness_weight;
+    }
+    public double getOther_cleanliness() {
+        return other_cleanliness;
+    }
+    public double getSelf_cleanliness() {
+        return self_cleanliness;
+    }
+    public double getNumber_of_roommates() {
+        return number_of_roommates;
+    }
+    public String getName() {
+        return name;
+    }
+    public String[] getPreferenceList() {
+        return this.preferred_amount_of_roommates;
+    }
 }
