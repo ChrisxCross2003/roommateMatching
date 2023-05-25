@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Additional Commit for Excel Reading">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added feature to calculate and add preferences to students.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,6 +147,7 @@
       <workItem from="1684935024040" duration="15909000" />
       <workItem from="1684958960766" duration="1193000" />
       <workItem from="1685031723665" duration="8975000" />
+      <workItem from="1685041390000" duration="2664000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -185,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684958983058</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added feature to calculate and add preferences to students.">
+      <created>1685041428585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685041428585</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +206,7 @@
     <MESSAGE value="added main" />
     <MESSAGE value="Added feature to read Excel and add stat to student class." />
     <MESSAGE value="Additional Commit for Excel Reading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional Commit for Excel Reading" />
+    <MESSAGE value="Added feature to calculate and add preferences to students." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feature to calculate and add preferences to students." />
   </component>
 </project>

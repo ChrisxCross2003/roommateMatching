@@ -23,11 +23,19 @@ public class StudentPreference {
         double presence_score = Math.abs((student1.getOther_presence() - student2.getSelf_presence()) * student1.getPresence_weight());
 
         score = clean_score + guests_score + hangout_score + sleep_score + extroversion_score + presence_score;
-        int worst_case_score = 105;
-        if (!Objects.equals(student2.getReligion(), "") || !Objects.equals(student2.getSpecial_information(), "")) {
-            final_score = (100 - (worst_case_score/score))+"*";
+        if (score == 0) {
+            if (!Objects.equals(student2.getReligion(), "") || !Objects.equals(student2.getSpecial_information(), "") || student2.getSpecial_information() != null || student2.getReligion() != null) {
+                final_score = String.valueOf(100);
+            } else {
+                final_score = 100 +"*";
+            }
         } else {
-            final_score = String.valueOf((100 - (105/score)));
+            int worst_case_score = 105;
+            if (!Objects.equals(student2.getReligion(), "") || !Objects.equals(student2.getSpecial_information(), "")) {
+                final_score = (100 - (worst_case_score/score))+"*";
+            } else {
+                final_score = String.valueOf((100 - (105/score)));
+            }
         }
         this.match_score = final_score;
         this.computing_id = student2.getid();
