@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
-    private final String[] preferred_amount_of_roommates = new String[3];
+    private final String[] preferred_group_size = new String[3];
     private double number_of_roommates;
     private String name;
     private String id;
-    private static String groupID;
+    private static int groupID = -1;
     private static final List<StudentPreference> preference_list = new ArrayList<>();
+    private final List<StudentProposal> proposers = new ArrayList<>();
+    private String lowest_possible_score;
 
     private double self_cleanliness;
     private double other_cleanliness;
@@ -39,9 +41,6 @@ public class Student {
     public Student() {
     }
 
-    public static void setGroup(String id) {
-        groupID = id;
-    }
 
     public void setID(String computing_id) {
         this.id = computing_id;
@@ -52,15 +51,15 @@ public class Student {
     }
 
     public void set_preference_of_roommates_for_three(String x) {
-        this.preferred_amount_of_roommates[0] = x;
+        this.preferred_group_size[0] = x;
     }
 
     public void set_preference_of_roommates_for_two(String x) {
-        this.preferred_amount_of_roommates[1] = x;
+        this.preferred_group_size[1] = x;
     }
 
     public void set_preference_of_roommates_for_one(String x) {
-        this.preferred_amount_of_roommates[2] = x;
+        this.preferred_group_size[2] = x;
     }
 
     public void set_number_of_roommates(double x) {
@@ -138,22 +137,36 @@ public class Student {
     public void set_special_information(String x) {
         this.special_information = x;
     }
+    public void addProposer(StudentProposal proposal) {
+        proposers.add(proposal);
+    }
+    public void removeProposer(StudentProposal proposal) {
+        proposers.remove(proposal);
+    }
+    public void clearProposers() {
+        proposers.clear();
+    }
 
-
-    public static String getGroup() {
+    public static int getGroup() {
         return groupID;
     }
 
     public void add_preference(StudentPreference preference) {
         preference_list.add(preference);
     }
+    public void setLowest_possible_score(String x) {
+        this.lowest_possible_score = x;
+    }
+    public void setGroupID (int x) {
+        groupID = x;
+    }
     public void clear_preference_list() {
         preference_list.clear();
     }
 
-    public static void remove_preference(StudentPreference preference) {
-        preference_list.remove(preference);
-    }
+//    public static void remove_preference(StudentPreference preference) {
+//        preference_list.remove(preference);
+//    }
 
     // Should only be used for debugging as this information should be hidden.
     public void print_preference_list() {
@@ -228,7 +241,20 @@ public class Student {
     public String getName() {
         return name;
     }
-    public String[] getPreferenceList() {
-        return this.preferred_amount_of_roommates;
+    public String[] getPreferred_group_size() {
+        return this.preferred_group_size;
+    }
+
+    public static List<StudentPreference> getPreference_list() {
+        return preference_list;
+    }
+    public List<StudentProposal> getProposers() {
+        return proposers;
+    }
+    public String getLowest_possible_score() {
+        return this.lowest_possible_score;
+    }
+    public int getGroupID() {
+        return groupID;
     }
 }

@@ -5,8 +5,12 @@ import java.util.Objects;
 public class StudentPreference {
     public String match_score;
     public String computing_id;
+    public String[] preferred_roommates;
+    public double number_of_roommates;
 
     public StudentPreference (Student student1, Student student2) {
+        this.preferred_roommates = student2.getPreferred_group_size();
+        this.number_of_roommates = student2.getNumber_of_roommates();
         calculate_preference(student1, student2);
     }
 
@@ -32,9 +36,9 @@ public class StudentPreference {
         } else {
             int worst_case_score = 105;
             if (!Objects.equals(student2.getReligion(), "") || !Objects.equals(student2.getSpecial_information(), "")) {
-                final_score = (100 - (worst_case_score/score))+"*";
+                final_score = (100 - (score/worst_case_score))+"*";
             } else {
-                final_score = String.valueOf((100 - (105/score)));
+                final_score = String.valueOf((100 - (score/worst_case_score)));
             }
         }
         this.match_score = final_score;

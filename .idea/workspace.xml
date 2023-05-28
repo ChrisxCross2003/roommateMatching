@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added feature to calculate and add preferences to students.">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentProposal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/dataLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +153,11 @@
       <workItem from="1684935024040" duration="15909000" />
       <workItem from="1684958960766" duration="1193000" />
       <workItem from="1685031723665" duration="8975000" />
-      <workItem from="1685041390000" duration="2664000" />
+      <workItem from="1685041390000" duration="2893000" />
+      <workItem from="1685066746336" duration="963000" />
+      <workItem from="1685118195135" duration="14301000" />
+      <workItem from="1685217975255" duration="3465000" />
+      <workItem from="1685291471431" duration="3265000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -191,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685041428585</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue">
+      <created>1685045139273</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685045139273</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +224,7 @@
     <MESSAGE value="Added feature to read Excel and add stat to student class." />
     <MESSAGE value="Additional Commit for Excel Reading" />
     <MESSAGE value="Added feature to calculate and add preferences to students." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature to calculate and add preferences to students." />
+    <MESSAGE value="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue" />
   </component>
 </project>

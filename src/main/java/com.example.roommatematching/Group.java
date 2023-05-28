@@ -7,12 +7,22 @@ public class Group {
     private int groupID;
     private static List<Student> students_in_group_list;
 
-    private int getSize() {
+    public int getSize() {
         return students_in_group_list.size();
     }
+    public void setGroupID(int id) {
+        this.groupID = id;
+    }
+    public boolean contains(Student student) {
+        return (students_in_group_list.contains(student));
+    }
+    public int getGroupID() {
+        return this.groupID;
+    }
 
-    public static void addStudent(Student student) {
+    public void addStudent(Student student) {
         students_in_group_list.add(student);
+        size += student.getNumber_of_roommates() + 1;
     }
 
     public static void removeStudent(Student student) {
