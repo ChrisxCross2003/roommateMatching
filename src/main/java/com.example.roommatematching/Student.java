@@ -8,6 +8,7 @@ public class Student {
     private double number_of_roommates;
     private String name;
     private String id;
+    private String gender;
     private static int groupID = -1;
     private static List<StudentPreference> preference_list = new ArrayList<>();
     private final List<StudentProposal> proposers = new ArrayList<>();
@@ -48,6 +49,10 @@ public class Student {
 
     public void setName(String n) {
         this.name = n;
+    }
+
+    public void setGender(String n) {
+        this.gender = n;
     }
 
     public void set_preference_of_group_of_4(String x) {
@@ -184,6 +189,9 @@ public class Student {
 
     public String getid() {
         return this.id;
+    }
+    public String getGender() {
+        return this.gender;
     }
     public String getSpecial_information() {
         return special_information;
