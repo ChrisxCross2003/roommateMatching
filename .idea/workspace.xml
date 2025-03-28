@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/roommateMatching.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/roommateMatching.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" afterDir="false" />
-    </list>
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Optimization Update. Recompiled Gradle. Updated Java." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +40,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ChrisxCross2003/roommateMatching.git",
+    "accountId": "35d06fa7-af66-4259-bdfa-a946fe4d22cd"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -184,7 +179,7 @@
       <workItem from="1685217975255" duration="3465000" />
       <workItem from="1685291471431" duration="3265000" />
       <workItem from="1743114482625" duration="2598000" />
-      <workItem from="1743117106406" duration="3645000" />
+      <workItem from="1743117106406" duration="3951000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -235,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685045139273</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Optimization Update. Recompiled Gradle. Updated Java.">
+      <option name="closed" value="true" />
+      <created>1743123946856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743123946856</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +255,7 @@
     <MESSAGE value="Additional Commit for Excel Reading" />
     <MESSAGE value="Added feature to calculate and add preferences to students." />
     <MESSAGE value="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where a 100% match caused divide by 0 error. &#10;As well as fixing google sheet -&gt; xlsx infinite loop issue" />
+    <MESSAGE value="Optimization Update. Recompiled Gradle. Updated Java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimization Update. Recompiled Gradle. Updated Java." />
   </component>
 </project>
