@@ -29,8 +29,7 @@ public class stableMatching {
         potentialRoommate.addProposer(proposal);
     }
     private static void groupStudents(Student student, int id) {
-        Group group = new Group();
-        group.setGroupID(id);
+        Group group = new Group(id);
         List<StudentProposal> proposalList = student.getProposers();
         int wanted_group_size = 4;
 

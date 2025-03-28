@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
-    private final String[] preferred_group_size = new String[3];
+    private final String[] preferred_group_size = new String[2];
     private double number_of_roommates;
     private String name;
     private String id;
     private static int groupID = -1;
-    private static final List<StudentPreference> preference_list = new ArrayList<>();
+    private static List<StudentPreference> preference_list = new ArrayList<>();
     private final List<StudentProposal> proposers = new ArrayList<>();
     private String lowest_possible_score;
 
@@ -50,16 +50,12 @@ public class Student {
         this.name = n;
     }
 
-    public void set_preference_of_roommates_for_three(String x) {
+    public void set_preference_of_group_of_4(String x) {
         this.preferred_group_size[0] = x;
     }
 
-    public void set_preference_of_roommates_for_two(String x) {
+    public void set_preference_of_group_of_2(String x) {
         this.preferred_group_size[1] = x;
-    }
-
-    public void set_preference_of_roommates_for_one(String x) {
-        this.preferred_group_size[2] = x;
     }
 
     public void set_number_of_roommates(double x) {
@@ -170,11 +166,19 @@ public class Student {
 
     // Should only be used for debugging as this information should be hidden.
     public void print_preference_list() {
-        System.out.println("Student Inquired: "+this.name);
-        for (StudentPreference preference : preference_list) {
-            System.out.println("ID: " + preference.computing_id);
-            System.out.println("Match Score: " + preference.match_score+"\n");
+        System.out.print("Student Inquired: " + this.id + "\n[");
+        for (int i = 0; i < preference_list.size(); i++) {
+            StudentPreference preference = preference_list.get(i);
+
+            // Print the ID and match score as a string
+            System.out.print(preference.computing_id + ", " + preference.match_score);
+
+            // Add a separator if it's not the last element in the list
+            if (i < preference_list.size() - 1) {
+                System.out.print("], [");
+            }
         }
+        System.out.println("]");
     }
 
 
