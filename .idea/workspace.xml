@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added Gender Filter, finished Initialize.java.">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added consideration for people with roommates when adding to Group.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StudentPreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +191,7 @@
       <workItem from="1743114482625" duration="2598000" />
       <workItem from="1743117106406" duration="4000000" />
       <workItem from="1743131753139" duration="7551000" />
-      <workItem from="1743194441967" duration="2490000" />
+      <workItem from="1743194441967" duration="6433000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -268,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743136482177</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added consideration for people with roommates when adding to Group.">
+      <option name="closed" value="true" />
+      <created>1743197422662</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743197422662</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +294,7 @@
     <MESSAGE value="Optimization Update. Recompiled Gradle. Updated Java." />
     <MESSAGE value="Added example roommateSheet" />
     <MESSAGE value="Added Gender Filter, finished Initialize.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Gender Filter, finished Initialize.java." />
+    <MESSAGE value="Added consideration for people with roommates when adding to Group." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added consideration for people with roommates when adding to Group." />
   </component>
 </project>

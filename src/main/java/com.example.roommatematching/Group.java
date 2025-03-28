@@ -5,13 +5,15 @@ import java.util.List;
 
 public class Group {
     private int size;
+    private int maxSize;
     private int groupID;
     private List<Student> students_in_group_list;
 
     // Constructor
-    public Group(int groupID) {
+    public Group(int groupID, int maxSize) {
         this.groupID = groupID;
         this.students_in_group_list = new ArrayList<>();
+        this.maxSize = maxSize;
         this.size = 0; // Initially no students
     }
 
@@ -61,8 +63,8 @@ public class Group {
     }
 
     // Optionally, a method to check if the group is full
-    public boolean isFull(int maxGroupSize) {
-        return students_in_group_list.size() >= maxGroupSize;
+    public boolean isFull() {
+        return students_in_group_list.size() >= this.maxSize;
     }
 
     // Get the list of students in this group
@@ -74,5 +76,9 @@ public class Group {
             students.add(id);
         }
         return students;
+    }
+
+    public int getMaxSize() {
+        return this.maxSize;
     }
 }

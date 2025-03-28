@@ -5,7 +5,6 @@ import java.util.List;
 
 public class stableMatching {
 
-    private final int MAX_GROUP_SIZE = 4;
     private List<Group> allGroups;
     private List<Student> malePairSeekers;
     private List<Student> femalePairSeekers;
@@ -15,6 +14,7 @@ public class stableMatching {
     private List<Student> femalePairBackups;
     private List<Student> maleGroupBackups;
     private List<Student> femaleGroupBackups;
+    private List<Student> oddMenOut = new ArrayList<>();
 
     // Constructor
     public stableMatching(List<Student> malePairSeekers, List<Student> femalePairSeekers,
@@ -34,24 +34,19 @@ public class stableMatching {
 
     // Start the matching process
     public void matchStudents() {
-        // Step 1: Match Group Seekers
+        // Step 1: Match Group Seekers - Complete
         matchGroupSeekers(maleGroupSeekers, "Male");
         matchGroupSeekers(femaleGroupSeekers, "Female");
 
-        // Step 2: Match Pair Seekers
-        // matchPairSeekers(malePairSeekers, "Male");
-        // matchPairSeekers(femalePairSeekers, "Female");
+        // Step 2: Match Pair Seekers - Complete
+         matchPairSeekers(malePairSeekers, "Male");
+         matchPairSeekers(femalePairSeekers, "Female");
 
-        // Step 3: Handle Backup Lists
-//        handleBackups(malePairBackups, "Male", "Pair");
-//        handleBackups(femalePairBackups, "Female", "Pair");
-//        handleBackups(maleGroupBackups, "Male", "Group");
-//        handleBackups(femaleGroupBackups, "Female", "Group");
+        // Step 3: Handle Backup Lists - In Progress
+        matchBackups(maleGroupSeekers, malePairSeekers);
+        matchBackups(femaleGroupSeekers, femalePairSeekers);
 
-        // Step 4: Final Check - Ensure no group exceeds max size
-//        checkGroupOverflow();
-
-        // Step 5: Output Results (This can be improved to suit the format you want)
+        // Step 4: Output Results
         outputResults();
     }
 
@@ -70,7 +65,7 @@ public class stableMatching {
 
             // Try matching with existing groups
             for (Group group : allGroups) {
-                if (!group.isFull(MAX_GROUP_SIZE) && !group.contains(student)) {
+                if (!group.isFull() && !group.contains(student)) {
                     group.addStudent(student);
                     matched = true;
                     break;
@@ -79,97 +74,108 @@ public class stableMatching {
 
             // Base case: If no match found, create a new group.
             if (!matched) {
-                Group newGroup = new Group(allGroups.size() + 1);
+                Group newGroup = new Group(allGroups.size() + 1, 4);
                 newGroup.addStudent(student);
                 allGroups.add(newGroup);
             }
         }
     }
 
-    // Step 2: Match Pair Seekers (Add to existing groups or create new groups)
     private void matchPairSeekers(List<Student> pairSeekers, String gender) {
-        // For each student in the pairSeeker list...
-        // find their respective highest preference score. then place them in a pair together if availble.
-        // if match is unavailable, move to next highest preference, and so on.
-
-        // anyone left over will be checked if they have a backup, if they do,
-        // we put them on standby for the next phase.
-        // If they do not have a second preference, they're an odd man out and can't be matched.
-
         for (Student student : pairSeekers) {
             boolean matched = false;
 
-            // Try matching with existing groups (for pair seekers, can match with any available spot)
+            // Only consider groups meant for pairs (maxSize == 2)
             for (Group group : allGroups) {
-                if (!group.isFull(MAX_GROUP_SIZE) && !group.contains(student)) {
+                if (group.getMaxSize() == 2 && !group.isFull() && !group.contains(student)) {
                     group.addStudent(student);
                     matched = true;
                     break;
                 }
             }
 
-            // If no match found, create a new group
             if (!matched) {
-                Group newGroup = new Group(allGroups.size() + 1);
-                newGroup.addStudent(student);
-                allGroups.add(newGroup);
+                Group pairGroup = new Group(allGroups.size() + 1, 2);  // max size 2 = pair
+                pairGroup.addStudent(student);
+                allGroups.add(pairGroup);
             }
         }
     }
 
     // Step 3: Handle Backup Lists (For students who couldn't be placed initially)
-    private void handleBackups(List<Student> backups, String gender, String type) {
-        // priority goes to Groups to get backups (to get the most amount of people matched.)
-        // For each unsettled group, take backups to settle it.
-        // if there's not enough backups, any leftover groups that have a backup will be added to pair backup.
-        // if there's an odd person, they will be the odd man out.
+    private void matchBackups(List<Student> groupBackups, List<Student> pairBackups) {
+        // remove any students from Backups if they are fully matched with their primary choice.
+        groupBackups.removeIf(this::isStudentInFullGroup);
+        pairBackups.removeIf(this::isStudentInFullGroup);
 
-        // based on this algorithm, odd man outs can only occur if someone doesn't have a backup,
-        // or there's an odd number.
-
-        // still need to find a way to ensure each person is as happy as possible with their pair.
-        // consider creating a separate method called "optimized_matching" that uses Happy Marriage algorithm
-        // to ensure matches best on both sides. (i.e. there's no students in two different groups that have a higher
-        // connection to each other than their own group (and is able to swap).
-        // This optimization would ensure all students get the best possible match.
-
-
-        for (Student student : backups) {
+        // Start filling in Groups with backups.
+        for (Student student : groupBackups) {
             boolean matched = false;
 
-            // Try matching with existing groups
+            // Try adding to an existing group (if not full)
             for (Group group : allGroups) {
-                if (!group.isFull(MAX_GROUP_SIZE) && !group.contains(student)) {
+                if (group.getMaxSize() == 4 && !group.isFull()) {
                     group.addStudent(student);
+                    groupBackups.remove(student); // remove student from backups list.
                     matched = true;
                     break;
                 }
             }
 
-            // If no match found, create a new group
+            // If no match, they're odd man out. No groups exist, so primary and secondary matches didn't work.
             if (!matched) {
-                Group newGroup = new Group(allGroups.size() + 1);
-                newGroup.addStudent(student);
-                allGroups.add(newGroup);
+                oddMenOut.add(student); // add student to odd man out.
             }
         }
+
+        // Print any groups that are still not full after placing backups
+        System.out.println("\n---- Unfilled Groups After Group Backups ----");
+        boolean hasUnfilled = false;
+        for (Group group : allGroups) {
+            if (group.getMaxSize() == 4 && !group.isFull()) {
+                System.out.println("Group " + group.getGroupID() + ": " + group.getStudents() + " - Size: " + group.getSize() + "/" + group.getMaxSize());
+                hasUnfilled = true;
+            }
+        }
+        if (!hasUnfilled) {
+            System.out.println("All 4-person groups are now full.");
+        }
+
+        // If there are unfulfilled group(s), (i.e. groupBackups ran out) try to break them into pairs.
+
+        // check which groups can break off. If so, remove one person and add them with the pair.
+            // if no pairs remain, but still backups, add them to the odd-man-out-list.
+            // if one unsettled pair remains, but no backups left, add them to the odd-man-out-list.
+
+        // run a final check on odd-man out list. Can the odd-men-out match?
+            // if so, add them to a group and remove them from the list.
+            // if not, whoever remains can not be matched.
+
+        // Print any groups that are still not full after placing backups
+        System.out.println("\n---- Unfilled Groups After Final Backup Check ----");
+        for (Group group : allGroups) {
+            if (group.getMaxSize() == 4 && !group.isFull()) {
+                System.out.println("Group " + group.getGroupID() + ": " + group.getStudents() + " - Size: " + group.getSize() + "/" + group.getMaxSize());
+            }
+        }
+
     }
 
     // Step 4: Final Check - Ensure no group exceeds max size
-    private void checkGroupOverflow() {
+    private boolean isStudentInFullGroup(Student student) {
         for (Group group : allGroups) {
-            if (group.getSize() > MAX_GROUP_SIZE) {
-                // Handle overflow by splitting or other methods
-                // You could introduce additional logic here
+            if (group.contains(student) && group.isFull()) {
+                return true;
             }
         }
+        return false;
     }
 
     // Step 5: Output Results (for demonstration purposes)
     private void outputResults() {
         System.out.println("Total Groups: " + allGroups.size());
         for (Group group : allGroups) {
-            System.out.println("Group " + group.getGroupID() + ": " + group.getStudents());
+            System.out.println("Group " + group.getGroupID() + ": " + group.getStudents() + " - Size: " + group.getSize());
         }
     }
 }
