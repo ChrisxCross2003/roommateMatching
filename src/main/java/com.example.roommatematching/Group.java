@@ -20,11 +20,6 @@ public class Group {
         return students_in_group_list.size();
     }
 
-    // Set the group ID
-    public void setGroupID(int id) {
-        this.groupID = id;
-    }
-
     // Check if a student is in this group
     public boolean contains(Student student) {
         return students_in_group_list.contains(student);
@@ -38,8 +33,19 @@ public class Group {
     // Add a student to the group
     public void addStudent(Student student) {
         students_in_group_list.add(student);
-        size += 1; // Increment size each time a student is added
+        size += 1; // Add first student.
+        // Check if they have any roommates already.
+        int numRoommates = (int) student.getNumber_of_roommates();
+        for (int i = 1; i <= numRoommates; i++) {
+            Student roommate = new Student();
+            roommate.setName(student.getName() + "'s Roommate");
+            roommate.setID(student.getid() + "_" + i);
+            students_in_group_list.add(roommate);
+            size += 1; // Increment size each time a student is added
+        }
     }
+
+
 
     // Remove a student from the group
     public void removeStudent(Student student) {
@@ -60,7 +66,13 @@ public class Group {
     }
 
     // Get the list of students in this group
-    public List<Student> getStudents() {
-        return students_in_group_list;
+    public ArrayList<Object> getStudents() {
+        ArrayList<Object> students = new ArrayList<>();
+        String id;
+        for (Student student : this.students_in_group_list) {
+            id = student.getid();
+            students.add(id);
+        }
+        return students;
     }
 }

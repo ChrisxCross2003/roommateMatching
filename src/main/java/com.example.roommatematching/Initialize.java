@@ -97,12 +97,17 @@ public class Initialize {
                             }
                             case (11) -> {
                                 // number of roommates already
+                                double x = 0;
                                 try {
-                                    student.set_number_of_roommates(cell.getNumericCellValue());
-                                } catch (IllegalStateException e) {
+                                    x = Double.parseDouble(cell.getStringCellValue());
+                                    student.set_number_of_roommates(x);
+                                } catch (NumberFormatException e) {
                                     student.set_number_of_roommates(0);
+                                } catch (IllegalStateException e) {
+                                    x = cell.getNumericCellValue();
+                                    student.set_number_of_roommates(x);
                                 }
-                                System.out.println("Number of roommates: " + cell.getStringCellValue());
+                                System.out.println("Number of roommates: " + x);
                             }
                             case (12) -> {
                                 // self-cleanliness
