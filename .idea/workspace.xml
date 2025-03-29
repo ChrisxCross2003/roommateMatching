@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Alpha version of Algorithm finished.">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Cleaned up methods for StableMatching.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +194,7 @@
       <workItem from="1743131753139" duration="7551000" />
       <workItem from="1743194441967" duration="6782000" />
       <workItem from="1743206637723" duration="7011000" />
-      <workItem from="1743221880467" duration="1456000" />
+      <workItem from="1743221880467" duration="4580000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -291,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743213666455</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cleaned up methods for StableMatching.java">
+      <option name="closed" value="true" />
+      <created>1743224088703</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743224088703</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +324,7 @@
     <MESSAGE value="Added consideration for people with roommates when adding to Group." />
     <MESSAGE value="Partial implementation of match algorithm" />
     <MESSAGE value="Alpha version of Algorithm finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alpha version of Algorithm finished." />
+    <MESSAGE value="Cleaned up methods for StableMatching.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up methods for StableMatching.java" />
   </component>
 </project>

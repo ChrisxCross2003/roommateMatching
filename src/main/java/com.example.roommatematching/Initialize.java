@@ -230,7 +230,7 @@ public class Initialize {
      * Separates students into preference-based lists for pair or group matching.
      * Then builds a preference list for each student based on compatibility with others in the same category.
      */
-    public static void createPreferenceLists() {
+    public static void createSeekers() {
         final String CYAN = "\u001B[36m";
         final String RESET = "\u001B[0m";
         final String GREEN = "\u001B[32m";
@@ -260,52 +260,6 @@ public class Initialize {
                 if (prefersGroupOfFour) femaleGroupSeekers.add(student);
                 else if (backupGroup) femaleGroupBackups.add(student);
             }
-        }
-
-        // Generate primary preferences within each group
-        System.out.println(GREEN +  "\n" + "Primary Preferences for male PairSeekers" + RESET);
-        generatePreferencesWithinGroup(malePairSeekers);
-        System.out.println(GREEN +  "\n" + "Primary Preferences for female PairSeekers" + RESET);
-        generatePreferencesWithinGroup(femalePairSeekers);
-        System.out.println(GREEN +  "\n" + "Primary Preferences for male GroupSeekers" + RESET);
-        generatePreferencesWithinGroup(maleGroupSeekers);
-        System.out.println(GREEN +  "\n" + "Primary Preferences for female GroupSeekers" + RESET);
-        generatePreferencesWithinGroup(femaleGroupSeekers);
-
-        System.out.println(GREEN +  "\n" + "---");
-
-        // Generate Secondary preferences within each group
-        // List the backup preferences (no need to generate preferences)
-        System.out.println(CYAN +  "\n" + "Backup List for male PairSeekers" + RESET);
-        listStudents(malePairBackups);
-        System.out.println(CYAN +  "\n" + "Backup List for female PairSeekers" + RESET);
-        listStudents(femalePairBackups);
-        System.out.println(CYAN +  "\n" + "Backup List for male GroupSeekers" + RESET);
-        listStudents(maleGroupBackups);
-        System.out.println(CYAN +  "\n" + "Backup List for female GroupSeekers" + RESET);
-        listStudents(femaleGroupBackups);
-    }
-
-    // Helper method to list students in the backup lists
-    private static void listStudents(List<Student> group) {
-        for (Student student : group) {
-            System.out.println(student.getName() + " (Gender: " + student.getGender() + ")");
-        }
-    }
-
-    // Helper method to reduce duplicate logic
-    private static void generatePreferencesWithinGroup(List<Student> group) {
-        for (int i = 0; i < group.size(); i++) {
-            Student student = group.get(i);
-            student.clear_preference_list();
-
-            for (int j = 0; j < group.size(); j++) {
-                if (i != j) {
-                    StudentPreference preference = new StudentPreference(student, group.get(j));
-                    student.add_preference(preference);
-                }
-            }
-            student.print_preference_list();
         }
     }
 

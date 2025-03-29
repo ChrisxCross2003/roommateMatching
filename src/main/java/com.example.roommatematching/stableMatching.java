@@ -19,12 +19,12 @@ public class stableMatching {
 
     // COLORS
     final String CYAN = "\u001B[36m";
-    final String RESET = "\u001B[0m";
-    final String GREEN = "\u001B[32m";
-    final String RED = "\u001B[31m";
-    final String YELLOW = "\u001B[33m";
-    final String BLUE = "\u001B[34m";
-    final String PURPLE = "\u001B[35m";
+    static final String RESET = "\u001B[0m";
+    static final String GREEN = "\u001B[32m";
+    static final String RED = "\u001B[31m";
+    static final String YELLOW = "\u001B[33m";
+    static final String BLUE = "\u001B[34m";
+    static final String PURPLE = "\u001B[35m";
 
     // Constructor
     public stableMatching(List<Student> malePairSeekers, List<Student> femalePairSeekers,
@@ -42,8 +42,9 @@ public class stableMatching {
         this.allGroups = new ArrayList<>();
     }
 
-    // Start the matching process
+    // Start matching process
     public void matchStudents() {
+        // Begin initial Matching
         // Step 1: Match Group Seekers - Complete
         matchGroupSeekers(maleGroupSeekers, "Male");
         matchGroupSeekers(femaleGroupSeekers, "Female");
@@ -57,7 +58,11 @@ public class stableMatching {
         matchBackups(femaleGroupSeekers, femalePairSeekers, "Female");
 
         // Step 4: Output Results
+        reassignGroupIDs(allGroups);
         outputResults();
+
+        // Output compatability for Groups
+        analyzeGroupCompatibility(allGroups);
     }
 
     // Step 1: Match Group Seekers to Groups
@@ -84,12 +89,11 @@ public class stableMatching {
                 // System.out.println("Adding " + student.getName() + " to group " + newGroup.getGroupID());
             }
         }
-        // Debug Statment
+        // Debug Statement
         printLeftoverGroups("GroupSeekers",4, gender);
     }
 
-
-
+    // Step 2: Match Pair Seekers to Pairs
     private void matchPairSeekers(List<Student> pairSeekers, String gender) {
         for (Student student : pairSeekers) {
             boolean matched = false;
@@ -136,6 +140,7 @@ public class stableMatching {
         printOddManOut(gender);
     }
 
+    // Helper method to handle first part of backup matches
     private void matchWithGroupBackups(List<Student> pairBackups, String gender) {
         Iterator<Student> iterator = pairBackups.iterator();
         while (iterator.hasNext()) {
@@ -171,6 +176,7 @@ public class stableMatching {
         }
     }
 
+    // Helper method to handle second part of backup matches
     private void matchWithPairBackups(List<Student> groupBackups, List<Student> pairBackups, String gender) {
         List<Student> remainingFromGroups = new ArrayList<>();
         removeMatchedBackups(groupBackups, pairBackups);
@@ -259,6 +265,51 @@ public class stableMatching {
         }
     }
 
+    // Helper method to reduce duplicate logic
+    private static void analyzeGroupCompatibility(List<Group> allGroups) {
+        for (Group group : allGroups) {
+            if (group.isFull()) {
+                System.out.println(PURPLE+"\n\nGroup " + group.getGroupID() + " Compatibility:"+RESET);
+                List<Student> members = group.getActualStudents();
+
+                double totalScore = 0;
+                int comparisons = 0;
+
+                for (int i = 0; i < members.size(); i++) {
+                    Student a = members.get(i);
+                    if (isPhantomStudent(a)) continue;
+                    for (int j = i + 1; j < members.size(); j++) {
+                        Student b = members.get(j);
+                        if (isPhantomStudent(b)) continue;
+                        double score = calculateCompatibilityScore(a, b);
+                        totalScore += score;
+                        comparisons++;
+
+                        System.out.println(a.getName() + " & " + b.getName() + ": "+ score);
+                    }
+                }
+                double averageScore = (comparisons > 0) ? totalScore / comparisons : 0;
+
+                System.out.printf(" => Overall Group Compatibility: %.2f\n", averageScore);
+            }
+        }
+    }
+
+    private static double calculateCompatibilityScore(Student a, Student b) {
+        StudentPreference preference = new StudentPreference(a, b);
+
+        return preference.match_score;
+    }
+
+    private static boolean isPhantomStudent(Student s) {
+        return s.getid().matches(".*_\\d+$");
+    }
+
+    private void reassignGroupIDs(List<Group> allGroups) {
+        for (int i = 0; i < allGroups.size(); i++) {
+            allGroups.get(i).setGroupID(i + 1);  // Make IDs start from 1
+        }
+    }
 
     /*
     / DEBUG helper methods below:
@@ -293,4 +344,5 @@ public class stableMatching {
             System.out.println(student.getName());
         }
     }
+
 }

@@ -92,4 +92,8 @@ public class Group {
     public int getMaxSize() {
         return this.maxSize;
     }
+
+    public void setGroupID(int i) {
+        this.groupID = i;
+    }
 }

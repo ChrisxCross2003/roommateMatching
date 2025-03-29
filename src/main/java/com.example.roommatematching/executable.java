@@ -5,7 +5,7 @@ public class executable {
         System.out.println("Ingesting Students...");
         Initialize.initializeAllStudents();
         System.out.println("Creating Preferences...");
-        Initialize.createPreferenceLists();
+        Initialize.createSeekers();
         stableMatching matcher = Initialize.initialize_matching();
         System.out.println("\nRunning Algorithm...");
         matcher.matchStudents();
