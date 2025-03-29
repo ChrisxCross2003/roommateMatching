@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Partial implementation of match algorithm">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Alpha version of Algorithm finished.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +191,8 @@
       <workItem from="1743117106406" duration="4000000" />
       <workItem from="1743131753139" duration="7551000" />
       <workItem from="1743194441967" duration="6782000" />
-      <workItem from="1743206637723" duration="6873000" />
+      <workItem from="1743206637723" duration="7011000" />
+      <workItem from="1743221880467" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -284,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743201388478</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Alpha version of Algorithm finished.">
+      <option name="closed" value="true" />
+      <created>1743213666455</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743213666455</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +313,7 @@
     <MESSAGE value="Added Gender Filter, finished Initialize.java." />
     <MESSAGE value="Added consideration for people with roommates when adding to Group." />
     <MESSAGE value="Partial implementation of match algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Partial implementation of match algorithm" />
+    <MESSAGE value="Alpha version of Algorithm finished." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alpha version of Algorithm finished." />
   </component>
 </project>
