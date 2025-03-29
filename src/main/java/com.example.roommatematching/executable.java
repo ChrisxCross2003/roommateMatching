@@ -7,7 +7,7 @@ public class executable {
         System.out.println("Creating Preferences...");
         Initialize.createPreferenceLists();
         stableMatching matcher = Initialize.initialize_matching();
-        System.out.println("Running Algorithm...");
+        System.out.println("\nRunning Algorithm...");
         matcher.matchStudents();
     }
 }

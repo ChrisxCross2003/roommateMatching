@@ -6,20 +6,26 @@ import java.util.List;
 public class Group {
     private int size;
     private int maxSize;
+    private String gender;
     private int groupID;
     private List<Student> students_in_group_list;
 
     // Constructor
-    public Group(int groupID, int maxSize) {
+    public Group(int groupID, int maxSize, String gender) {
         this.groupID = groupID;
         this.students_in_group_list = new ArrayList<>();
         this.maxSize = maxSize;
         this.size = 0; // Initially no students
+        this.gender = gender;
     }
 
     // Get the size of the group
     public int getSize() {
         return students_in_group_list.size();
+    }
+
+    public String getGender() {
+        return this.gender;
     }
 
     // Check if a student is in this group
@@ -49,12 +55,13 @@ public class Group {
 
 
 
-    // Remove a student from the group
+    // Removes all student from the group
+    public void removeallStudents() {
+        students_in_group_list.clear();
+    }
+
     public void removeStudent(Student student) {
-        if (students_in_group_list.contains(student)) {
-            students_in_group_list.remove(student);
-            size -= 1; // Decrement size when a student is removed
-        }
+        students_in_group_list.remove(student);
     }
 
     // Find a student in the group
@@ -76,6 +83,10 @@ public class Group {
             students.add(id);
         }
         return students;
+    }
+
+    public List<Student> getActualStudents() {
+        return this.students_in_group_list;
     }
 
     public int getMaxSize() {
