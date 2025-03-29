@@ -47,7 +47,7 @@ public class Group {
         for (int i = 1; i <= numRoommates; i++) {
             Student roommate = new Student();
             roommate.setName(student.getName() + "'s Roommate");
-            roommate.setID(student.getid() + "_" + i);
+            roommate.setID(student.getID() + "_" + i);
             students_in_group_list.add(roommate);
             size += 1; // Increment size each time a student is added
         }
@@ -79,7 +79,7 @@ public class Group {
         ArrayList<Object> students = new ArrayList<>();
         String id;
         for (Student student : this.students_in_group_list) {
-            id = student.getid();
+            id = student.getID();
             students.add(id);
         }
         return students;

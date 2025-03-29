@@ -34,7 +34,7 @@ public class StudentPreference {
 
         // Store the computed match score and the ID of the student being compared
         this.match_score = final_score;
-        this.computing_id = student2.getid();
+        this.computing_id = student2.getID();
     }
 
     /**

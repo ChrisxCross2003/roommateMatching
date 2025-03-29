@@ -6,24 +6,23 @@ import java.util.List;
 
 public class stableMatching {
 
-    private List<Group> allGroups;
-    private List<Student> malePairSeekers;
-    private List<Student> femalePairSeekers;
-    private List<Student> maleGroupSeekers;
-    private List<Student> femaleGroupSeekers;
-    private List<Student> malePairBackups;
-    private List<Student> femalePairBackups;
-    private List<Student> maleGroupBackups;
-    private List<Student> femaleGroupBackups;
-    private List<Student> oddMenOut = new ArrayList<>();
+    private final List<Group> allGroups;
+    private final List<Student> malePairSeekers;
+    private final List<Student> femalePairSeekers;
+    private final List<Student> maleGroupSeekers;
+    private final List<Student> femaleGroupSeekers;
+    private final List<Student> malePairBackups;
+    private final List<Student> femalePairBackups;
+    private final List<Student> maleGroupBackups;
+    private final List<Student> femaleGroupBackups;
+    private final List<Student> maleOddMenOut = new ArrayList<>();
+    private final List<Student> femaleOddMenOut = new ArrayList<>();
 
     // COLORS
-    final String CYAN = "\u001B[36m";
     static final String RESET = "\u001B[0m";
     static final String GREEN = "\u001B[32m";
     static final String RED = "\u001B[31m";
     static final String YELLOW = "\u001B[33m";
-    static final String BLUE = "\u001B[34m";
     static final String PURPLE = "\u001B[35m";
 
     // Constructor
@@ -54,8 +53,8 @@ public class stableMatching {
          matchPairSeekers(femalePairSeekers, "Female");
 
         // Step 3: Handle Backup Lists - In Progress
-        matchBackups(maleGroupSeekers, malePairSeekers, "Male");
-        matchBackups(femaleGroupSeekers, femalePairSeekers, "Female");
+        matchBackups(maleGroupBackups, malePairBackups, "Male");
+        matchBackups(femaleGroupBackups, femalePairBackups, "Female");
 
         // Step 4: Output Results
         reassignGroupIDs(allGroups);
@@ -63,6 +62,8 @@ public class stableMatching {
 
         // Output compatability for Groups
         analyzeGroupCompatibility(allGroups);
+        printOddManOut("Male");
+        printOddManOut("Female");
     }
 
     // Step 1: Match Group Seekers to Groups
@@ -122,22 +123,21 @@ public class stableMatching {
 
     // Step 3: Handle Backup Lists (For students who couldn't be placed initially)
     private void matchBackups(List<Student> groupBackups, List<Student> pairBackups, String gender) {
-        //printCurrentGroups();
-        //System.out.println("Starting backups...\n");
+        // printCurrentGroups();
+        // System.out.println("Starting backups...\n");
 
         // remove any students from Backups if they are fully matched with their primary choice.
         removeMatchedBackups(groupBackups, pairBackups);
-        //printBackupLists(groupBackups, pairBackups, gender);
+        // printBackupLists(groupBackups, pairBackups, gender);
 
         // Start filling in Groups with backups.
-        matchWithGroupBackups(pairBackups, gender);
+        matchWithGroupBackups(groupBackups, gender);
 
         // Print any groups that are still not full after placing backups
         printLeftoverGroups("pairBackups", 4, gender);
 
         // If there are unfulfilled group(s), (i.e. groupBackups ran out) try to break them into pairs.
-        matchWithPairBackups(groupBackups, pairBackups, gender);
-        printOddManOut(gender);
+        matchWithPairBackups(pairBackups, groupBackups, gender);
     }
 
     // Helper method to handle first part of backup matches
@@ -171,60 +171,65 @@ public class stableMatching {
             }
 
             if (!matched && !isStudentInFullGroup(student)) {
-                oddMenOut.add(student);
+                if (gender.equals("Male")) {
+                    maleOddMenOut.add(student);
+                } else {
+                    femaleOddMenOut.add(student);
+                }
+
             }
         }
     }
 
     // Helper method to handle second part of backup matches
     private void matchWithPairBackups(List<Student> groupBackups, List<Student> pairBackups, String gender) {
-        List<Student> remainingFromGroups = new ArrayList<>();
         removeMatchedBackups(groupBackups, pairBackups);
-
-        for (Group group : allGroups) {
-            if (group.getMaxSize() == 4 && !group.isFull() && group.getGender().equals(gender)) {
-                remainingFromGroups.addAll(group.getActualStudents());
-                group.removeallStudents(); // break up the group.
-            }
-        }
-
-        // Combine remaining group members and pair backups
-        groupBackups.addAll(remainingFromGroups);
 
         // Match broken groups into pairs
         Iterator<Student> pairIterator = groupBackups.iterator();
         while (pairIterator.hasNext()) {
             Student student = pairIterator.next();
-            boolean matched = false;
 
             for (Group group : allGroups) {
                 if (group.getMaxSize() == 2 && !group.isFull() && group.getGender().equals(gender)) {
-                    //System.out.println("Backup for Pair found!");
-                    //System.out.println("Adding " + student.getName() + " to group " + group.getGroupID());
-
-                    // if backup student found, remove them from original group.
                     Iterator<Group> groupIterator = allGroups.iterator();
                     while (groupIterator.hasNext()) {
                         Group originalGroup = groupIterator.next();
                         if (originalGroup.contains(student)) {
-                            //System.out.println("Removing student from group...");
                             originalGroup.removeStudent(student);
                             if (originalGroup.getSize() == 0) {
-                                // if original group is now empty, delete it.
-                                //System.out.println("Group is empty. Deleting Group...");
-                                groupIterator.remove(); // Remove the group from allGroups
+                                groupIterator.remove();
                             }
                             break;
                         }
                     }
                     group.addStudent(student);
                     pairIterator.remove(); // ✅ Safe removal
-                    matched = true;
                     break;
                 }
             }
-            if (!matched && !isStudentInFullGroup(student)) {
-                oddMenOut.add(student);
+        }
+        // Always run cleanup once at the end to check if any unfilled groups still remain.
+        cleanupLeftoverGroups(gender);
+    }
+
+    private void cleanupLeftoverGroups(String gender) {
+        Iterator<Group> cleanupIterator = allGroups.iterator();
+        while (cleanupIterator.hasNext()) {
+            Group group = cleanupIterator.next();
+            if (!group.isFull() && group.getGender().equals(gender)) {
+                for (Student stud : group.getActualStudents()) {
+                    System.out.println("Removing "+stud.getName()+" from leftover group.");
+                    if (!isStudentInFullGroup(stud)) {
+                        if (gender.equals("Male")) {
+                            maleOddMenOut.add(stud);
+                        } else {
+                            femaleOddMenOut.add(stud);
+                        }
+                    }
+                }
+                System.out.println("Removing leftover Group: "+group.getGroupID());
+                cleanupIterator.remove();
             }
         }
     }
@@ -232,13 +237,24 @@ public class stableMatching {
     // prints the final students who were left out.
     private void printOddManOut(String gender) {
         System.out.println("\nOdd Students Out: ("+ gender +")");
-        if (oddMenOut.isEmpty()) {
-            System.out.println(GREEN+"All students matched!"+RESET);
+        if (gender.equals("Male")) {
+            if (maleOddMenOut.isEmpty()) {
+                System.out.println(GREEN+"All students matched!"+RESET);
+            } else {
+                for (Student odd : maleOddMenOut) {
+                    System.out.println(RED+odd.getID() + " - " + odd.getName()+RESET);
+                }
+            }
         } else {
-            for (Student odd : oddMenOut) {
-                System.out.println(RED+odd.getid() + " - " + odd.getName()+RESET);
+            if (femaleOddMenOut.isEmpty()) {
+                System.out.println(GREEN+"All students matched!"+RESET);
+            } else {
+                for (Student odd : femaleOddMenOut) {
+                    System.out.println(RED+odd.getID() + " - " + odd.getName()+RESET);
+                }
             }
         }
+
     }
 
     // checks the backup lists to see if any backups were added to a full group. If so, remove them.
@@ -302,7 +318,7 @@ public class stableMatching {
     }
 
     private static boolean isPhantomStudent(Student s) {
-        return s.getid().matches(".*_\\d+$");
+        return s.getID().matches(".*_\\d+$");
     }
 
     private void reassignGroupIDs(List<Group> allGroups) {
@@ -320,7 +336,7 @@ public class stableMatching {
         System.out.println(YELLOW+"\nLeftover groups from "+groupType+" matching: (" + gender + ")"+RESET);
         for (Group group : allGroups) {
             if (group.getMaxSize() == groupSize && !group.isFull() && group.getGender().equals(gender)) {
-                System.out.println("Group " + group.getGroupID() + ": " + group.getStudents() + " - Size: " + group.getSize() + "/" + group.getMaxSize()+"\n");
+                System.out.println("Group " + group.getGroupID() + ": " + group.getStudents() + " - Size: " + group.getSize() + "/" + group.getMaxSize());
             }
         }
     }

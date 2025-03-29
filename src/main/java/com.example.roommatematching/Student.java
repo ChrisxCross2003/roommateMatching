@@ -10,8 +10,7 @@ public class Student {
     private String id;
     private String gender;
     private static int groupID = -1;
-    private static List<StudentPreference> preference_list = new ArrayList<>();
-    private final List<StudentProposal> proposers = new ArrayList<>();
+    private static final List<StudentPreference> preference_list = new ArrayList<>();
     private String lowest_possible_score;
 
     private double self_cleanliness;
@@ -138,36 +137,15 @@ public class Student {
     public void set_special_information(String x) {
         this.special_information = x;
     }
-    public void addProposer(StudentProposal proposal) {
-        proposers.add(proposal);
-    }
-    public void removeProposer(StudentProposal proposal) {
-        proposers.remove(proposal);
-    }
-    public void clearProposers() {
-        proposers.clear();
-    }
 
     public static int getGroup() {
         return groupID;
     }
 
-    public void add_preference(StudentPreference preference) {
-        preference_list.add(preference);
-    }
     public void setLowest_possible_score(String x) {
         this.lowest_possible_score = x;
     }
-    public void setGroupID (int x) {
-        groupID = x;
-    }
-    public void clear_preference_list() {
-        preference_list.clear();
-    }
 
-//    public static void remove_preference(StudentPreference preference) {
-//        preference_list.remove(preference);
-//    }
 
     // Should only be used for debugging as this information should be hidden.
     public void print_preference_list() {
@@ -187,7 +165,7 @@ public class Student {
     }
 
 
-    public String getid() {
+    public String getID() {
         return this.id;
     }
     public String getGender() {
@@ -260,9 +238,7 @@ public class Student {
     public static List<StudentPreference> getPreference_list() {
         return preference_list;
     }
-    public List<StudentProposal> getProposers() {
-        return proposers;
-    }
+
     public String getLowest_possible_score() {
         return this.lowest_possible_score;
     }
