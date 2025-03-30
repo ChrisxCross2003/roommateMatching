@@ -4,8 +4,10 @@ import org.junit.jupiter.api.Test;
 
 public class MatchTest {
     @Test
-    void testOddManOutMale() {
-        runExecutable("roommateSheet.xlsx");
+    void testSimplePairs() {
+        // Testing functionality of matching if all people want pairs.
+            // allows us to check if primary pair matching works.
+        runExecutable("simplePairMatching.xlsx");
     }
 
     // Helper method to run main.
