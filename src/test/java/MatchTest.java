@@ -10,6 +10,27 @@ public class MatchTest {
         runExecutable("simplePairMatching.xlsx");
     }
 
+    @Test
+    void testSimplePairs_oddManOut() {
+        // Testing functionality of matching if odd number of people want pairs.
+        // two people: one from each gender should be left out due to odd number.
+        runExecutable("simplePairMatching_OddManOut.xlsx");
+    }
+
+    @Test
+    void testSimpleGroups() {
+        // Testing functionality of matching groups together, with or without original roommates.
+        // Nobody should be left out.
+        runExecutable("simpleGroupMatching.xlsx");
+    }
+
+    @Test
+    void testSimpleGroups_oddManOut() {
+        // Testing functionality of matching groups together, with odd man out for Male and Female.
+        // two people: one from each gender should be left out due to odd number.
+        runExecutable("simpleGroupMatching_oddManOut.xlsx");
+    }
+
     // Helper method to run main.
     private static void runExecutable(String filename) {
         Initialize.initializeAllStudents(filename);

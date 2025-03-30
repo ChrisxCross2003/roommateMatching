@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added Testing. Slight bug fixes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/simplePairMatching.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/simplePairMatching.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,10 @@
     "Application.main.executor": "Run",
     "Gradle.Build roommateMatching.executor": "Run",
     "Gradle.MatchTest.testOddManOutMale.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroups.executor": "Run",
+    "Gradle.MatchTest.testSimpleGroups_oddManOut.executor": "Run",
+    "Gradle.MatchTest.testSimplePairs.executor": "Run",
+    "Gradle.MatchTest.testSimplePairs_oddManOut.executor": "Run",
     "Gradle.roommateMatching [:com.example.roommatematching.executable.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -114,27 +120,12 @@
       <recent name="C:\Users\chris\IdeaProjects\roommateMatching" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MatchTest.testOddManOutMale">
+  <component name="RunManager" selected="Gradle.MatchTest.testSimpleGroups_oddManOut">
     <configuration name="executable" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.roommatematching.executable" />
       <module name="Java.roommateMatching.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.roommatematching.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.roommatematching.main" />
-      <module name="roommateMatching.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.roommatematching.*" />
@@ -169,15 +160,117 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="MatchTest.testSimpleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MatchTest.testSimpleGroups&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MatchTest.testSimpleGroups_oddManOut" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MatchTest.testSimpleGroups_oddManOut&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MatchTest.testSimplePairs" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MatchTest.testSimplePairs&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MatchTest.testSimplePairs_oddManOut" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MatchTest.testSimplePairs_oddManOut&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.executable" />
-      <item itemvalue="Application.main" />
+      <item itemvalue="Gradle.MatchTest.testSimpleGroups" />
+      <item itemvalue="Gradle.MatchTest.testSimpleGroups_oddManOut" />
+      <item itemvalue="Gradle.MatchTest.testSimplePairs" />
+      <item itemvalue="Gradle.MatchTest.testSimplePairs_oddManOut" />
       <item itemvalue="Gradle.MatchTest.testOddManOutMale" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MatchTest.testSimpleGroups_oddManOut" />
+        <item itemvalue="Gradle.MatchTest.testSimpleGroups" />
+        <item itemvalue="Gradle.MatchTest.testSimplePairs_oddManOut" />
+        <item itemvalue="Gradle.MatchTest.testSimplePairs" />
         <item itemvalue="Gradle.MatchTest.testOddManOutMale" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +312,7 @@
       <workItem from="1743206637723" duration="7011000" />
       <workItem from="1743221880467" duration="5601000" />
       <workItem from="1743273664030" duration="4084000" />
+      <workItem from="1743297729096" duration="2916000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -341,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743277175344</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added Testing. Slight bug fixes.">
+      <option name="closed" value="true" />
+      <created>1743297985678</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743297985678</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
