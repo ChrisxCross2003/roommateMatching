@@ -20,9 +20,13 @@ public class Export {
             String[] headers = {
                     "Group ID",
                     "Student 1 ID",
+                    "Student 1 Name",
                     "Student 2 ID",
+                    "Student 2 Name",
                     "Student 3 ID",
+                    "Student 3 Name",
                     "Student 4 ID",
+                    "Student 4 Name",
                     "Overall Compatibility",
                     "S1 → S2 Compatibility",
                     "S2 → S3 Compatibility",
@@ -35,30 +39,40 @@ public class Export {
                 cell.setCellValue(headers[i]);
             }
 
-            // Data rows for groups
+// Data rows for groups
             int rowNum = 1;
             for (Group group : groups) {
                 Row row = groupSheet.createRow(rowNum++);
                 List<Student> members = group.getActualStudents();
 
+                // Group ID
                 row.createCell(0).setCellValue(group.getGroupID());
+
+                // Student ID + Name columns
+                int cellIndex = 1;
                 for (int i = 0; i < 4; i++) {
                     if (i < members.size()) {
-                        row.createCell(i + 1).setCellValue(members.get(i).getID());
+                        Student student = members.get(i);
+                        String id = (student.getID() != null && !student.getID().isEmpty()) ? student.getID() : "N/A";
+                        String name = (student.getName() != null && !student.getName().isEmpty()) ? student.getName() : "N/A";
+                        row.createCell(cellIndex++).setCellValue(id);
+                        row.createCell(cellIndex++).setCellValue(name);
                     } else {
-                        row.createCell(i + 1).setCellValue("N/A");
+                        // Fill remaining cells with "N/A" if group has fewer than 4 students
+                        row.createCell(cellIndex++).setCellValue("N/A"); // ID
+                        row.createCell(cellIndex++).setCellValue("N/A"); // Name
                     }
                 }
 
-                double overall = calculateOverallCompatibility(members);
-                row.createCell(5).setCellValue(roundToTwoDecimals(overall));
+                // Compatibility scores
+                row.createCell(cellIndex++).setCellValue(roundToTwoDecimals(calculateOverallCompatibility(members)));
 
                 for (int i = 0; i < 3; i++) {
                     if (i + 1 < members.size()) {
                         double score = calculateCompatibilityScore(members.get(i), members.get(i + 1));
-                        row.createCell(6 + i).setCellValue(roundToTwoDecimals(score));
+                        row.createCell(cellIndex++).setCellValue(roundToTwoDecimals(score));
                     } else {
-                        row.createCell(6 + i).setCellValue("N/A");
+                        row.createCell(cellIndex++).setCellValue("N/A");
                     }
                 }
             }
