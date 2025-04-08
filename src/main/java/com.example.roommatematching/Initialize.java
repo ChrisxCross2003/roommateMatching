@@ -260,13 +260,12 @@ public class Initialize {
     }
 
 
-    public static stableMatching initialize_matching() {
-        stableMatching matcher = new stableMatching(
+    public static StableMatching initialize_matching() {
+        return new StableMatching(
                 malePairSeekers, femalePairSeekers,
                 maleGroupSeekers, femaleGroupSeekers,
                 malePairBackups, femalePairBackups,
                 maleGroupBackups, femaleGroupBackups
         );
-        return matcher;
     }
 }

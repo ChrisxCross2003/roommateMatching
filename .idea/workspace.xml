@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Tested all primary matches">
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Fixed bug in rare cases where odd-men-out still have potential matches.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Export.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/executable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Executable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/stableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StableMatching.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MatchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -72,44 +79,44 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build roommateMatching.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testOddManOutMale.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.MatchTest.testSimpleGroupBackups.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimpleGroups.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimpleGroups_oddManOut.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimplePairBackups.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimplePairs.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimplePairs_oddManOut.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.roommateMatching [:com.example.roommatematching.executable.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/Documents/Java/roommateMatching&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.main.executor": "Run",
+    "Gradle.Build roommateMatching.executor": "Run",
+    "Gradle.MatchTest.testOddManOutMale.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroupBackups.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroups.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroups_oddManOut.executor": "Run",
+    "Gradle.MatchTest.testSimplePairBackups.executor": "Coverage",
+    "Gradle.MatchTest.testSimplePairs.executor": "Run",
+    "Gradle.MatchTest.testSimplePairs_oddManOut.executor": "Coverage",
+    "Gradle.roommateMatching [:com.example.roommatematching.executable.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chris/Documents/Java/roommateMatching",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;,
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore",
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.roommatematching" />
@@ -122,11 +129,11 @@
       <recent name="C:\Users\chris\IdeaProjects\roommateMatching" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MatchTest.testSimplePairBackups">
-    <configuration name="executable" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.MatchTest.testSimpleGroups_oddManOut">
+    <configuration name="Executable" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.roommatematching.executable" />
+      <option name="MAIN_CLASS_NAME" value="com.example.roommatematching.Executable" />
       <module name="Java.roommateMatching.main" />
       <extension name="coverage">
         <pattern>
@@ -234,7 +241,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MatchTest.testSimplePairs_oddManOut" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MatchTest.testSimplePairs" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -247,7 +254,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;MatchTest.testSimplePairs_oddManOut&quot;" />
+            <option value="&quot;MatchTest.testSimplePairs&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -259,19 +266,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.executable" />
+      <item itemvalue="Application.Executable" />
+      <item itemvalue="Gradle.MatchTest.testSimplePairs" />
       <item itemvalue="Gradle.MatchTest.testSimpleGroupBackups" />
       <item itemvalue="Gradle.MatchTest.testSimpleGroups" />
       <item itemvalue="Gradle.MatchTest.testSimpleGroups_oddManOut" />
       <item itemvalue="Gradle.MatchTest.testSimplePairBackups" />
-      <item itemvalue="Gradle.MatchTest.testSimplePairs_oddManOut" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MatchTest.testSimplePairBackups" />
-        <item itemvalue="Gradle.MatchTest.testSimplePairs_oddManOut" />
-        <item itemvalue="Gradle.MatchTest.testSimpleGroupBackups" />
         <item itemvalue="Gradle.MatchTest.testSimpleGroups_oddManOut" />
+        <item itemvalue="Gradle.MatchTest.testSimplePairs" />
+        <item itemvalue="Gradle.MatchTest.testSimplePairBackups" />
+        <item itemvalue="Gradle.MatchTest.testSimpleGroupBackups" />
         <item itemvalue="Gradle.MatchTest.testSimpleGroups" />
       </list>
     </recent_temporary>
@@ -315,7 +322,7 @@
       <workItem from="1743221880467" duration="5601000" />
       <workItem from="1743273664030" duration="4084000" />
       <workItem from="1743297729096" duration="5136000" />
-      <workItem from="1744131084072" duration="5388000" />
+      <workItem from="1744131084072" duration="8952000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -454,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743300787621</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed bug in rare cases where odd-men-out still have potential matches.">
+      <option name="closed" value="true" />
+      <created>1744137110937</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1744137110937</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,9 +496,16 @@
     <MESSAGE value="Finished Algorithm. Beta version needs testing and edge case handling." />
     <MESSAGE value="Added Testing. Slight bug fixes." />
     <MESSAGE value="Tested all primary matches" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested all primary matches" />
+    <MESSAGE value="Fixed bug in rare cases where odd-men-out still have potential matches." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in rare cases where odd-men-out still have potential matches." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testSimpleGroups.ic" NAME="MatchTest.testSimpleGroups Coverage Results" MODIFIED="1744137596558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testOddManOutMale.ic" NAME="MatchTest.testOddManOutMale Coverage Results" MODIFIED="1743277069472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testSimpleGroups_oddManOut.ic" NAME="MatchTest.testSimpleGroups_oddManOut Coverage Results" MODIFIED="1744137641874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testSimpleGroupBackups.ic" NAME="MatchTest.testSimpleGroupBackups Coverage Results" MODIFIED="1744137670710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testSimplePairs_oddManOut.ic" NAME="MatchTest.testSimplePairs_oddManOut Coverage Results" MODIFIED="1744137571998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testSimplePairs.ic" NAME="MatchTest.testSimplePairs Coverage Results" MODIFIED="1744139404390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/roommateMatching$MatchTest_testSimplePairBackups.ic" NAME="MatchTest.testSimplePairBackups Coverage Results" MODIFIED="1744137784725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

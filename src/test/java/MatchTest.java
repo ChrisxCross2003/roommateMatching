@@ -1,5 +1,5 @@
 import com.example.roommatematching.Initialize;
-import com.example.roommatematching.stableMatching;
+import com.example.roommatematching.StableMatching;
 import org.junit.jupiter.api.Test;
 
 public class MatchTest {
@@ -41,21 +41,17 @@ public class MatchTest {
 
     @Test
     void testSimplePairBackups() {
-        // Testing how incomplete groups are handled if there are available backups.
-        // One group of 3, and 1 person looking for a pair, but has group as a backup.
+        // Testing how incomplete groups are handled if there are no available backups, but they can be split into pairs
+        // Two groups of 3, and 2 people looking for a pair, but the group has pairs as a backup.
         // no odd man out should remain.
         runExecutable("simplePairBackups.xlsx");
-        //TODO: Bug found! Need to check odd-men-out to see if they can be matched one last time.
-            // despite marcus and leo having pair as a second choice, they're odd-men-out.
-            // they could've been put into a pair.
-            // same for Olivia and Ashley
     }
 
     // Helper method to run main.
     private static void runExecutable(String filename) {
         Initialize.initializeAllStudents(filename);
         Initialize.createSeekers();
-        stableMatching matcher = Initialize.initialize_matching();
+        StableMatching matcher = Initialize.initialize_matching();
         System.out.println("\nRunning Algorithm...");
         matcher.matchStudents();
     }
