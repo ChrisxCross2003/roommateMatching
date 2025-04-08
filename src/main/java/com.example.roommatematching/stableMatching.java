@@ -123,9 +123,6 @@ public class stableMatching {
 
     // Step 3: Handle Backup Lists (For students who couldn't be placed initially)
     private void matchBackups(List<Student> groupBackups, List<Student> pairBackups, String gender) {
-        // printCurrentGroups();
-        // System.out.println("Starting backups...\n");
-
         // remove any students from Backups if they are fully matched with their primary choice.
         removeMatchedBackups(groupBackups, pairBackups);
         // printBackupLists(groupBackups, pairBackups, gender);
@@ -209,8 +206,87 @@ public class stableMatching {
                 }
             }
         }
+
         // Always run cleanup once at the end to check if any unfilled groups still remain.
         cleanupLeftoverGroups(gender);
+
+        // After trying to pair up students, check if any are left and should be paired
+        finalizeOddMenOut(groupBackups, pairBackups, gender);  // Finalize by pairing odd-man-out students if possible
+    }
+
+    private void finalizeOddMenOut(List<Student> groupBackups, List<Student> pairBackups, String gender) {
+        // printBackupLists(groupBackups, pairBackups, gender);
+
+        // If we're handling males
+        if (gender.equals("Male")) {
+            // Try to match odd males with each other
+            matchOddMen(maleOddMenOut, groupBackups, pairBackups);
+        }
+        // If we're handling females
+        else if (gender.equals("Female")) {
+            // Try to match odd females with each other
+            matchOddMen(femaleOddMenOut, groupBackups, pairBackups);
+        }
+    }
+
+    private void matchOddMen(List<Student> oddMenOut, List<Student> groupBackups, List<Student> pairBackups) {
+        Iterator<Student> oddIterator = oddMenOut.iterator();
+
+        while (oddIterator.hasNext()) {
+            Student student1 = oddIterator.next();
+            boolean matched = false;
+            Iterator<Student> backupIterator = groupBackups.iterator();
+
+            while (backupIterator.hasNext()) {
+                Student student2 = backupIterator.next();
+                // System.out.println("\nCan we match " + student1.getID() + " and " + student2.getID() + "?");
+
+                // Match students if they are not the same student
+                if (!student1.equals(student2)) {
+                    // System.out.println("Yes! Adding to new pair.");
+
+                    // Create a pair group for the two students
+                    Group pairGroup = new Group(allGroups.size() + 1, 2, student1.getGender());
+                    pairGroup.addStudent(student1);
+                    pairGroup.addStudent(student2);
+                    // Add the pair group to the list of groups
+                    allGroups.add(pairGroup);
+
+                    // Remove the paired students from odd-men-out list and groupBackups
+                    oddIterator.remove();  // Remove student1 from odd-men-out.
+                    backupIterator.remove();  // Remove student2 from groupBackups
+                    oddMenOut.remove(student2); // remove student2 from odd-men-out
+                    groupBackups.remove(student1); // remove student1 from groupBackups
+
+                    matched = true;
+                    break;  // Exit the inner loop once a match is found
+                }
+                // else {
+                    // System.out.println("No.");
+                // }
+            }
+
+            // If no match was found, proceed to next student in oddMenOut
+            if (!matched) {
+                System.out.println(student1.getID() + " remains an odd man out.");
+            }
+        }
+
+        // Once all matching is done, clean up the groupBackups list
+        removeMatchedBackups(groupBackups, pairBackups);
+
+        // After attempting to match all odd men, if any students remain, they are still odd-men-out
+        cleanupOddMenOut(oddMenOut, groupBackups);
+    }
+
+
+    private void cleanupOddMenOut(List<Student> oddMenOut, List<Student> groupBackups) {
+        for (Student student : oddMenOut) {
+            if (!groupBackups.contains(student)) {
+                // Log or handle students who could not be paired
+                System.out.println(student.getName() + " is still an odd man out.");
+            }
+        }
     }
 
     private void cleanupLeftoverGroups(String gender) {
@@ -350,12 +426,12 @@ public class stableMatching {
     }
 
     private void printBackupLists(List<Student> groupBackups, List<Student> pairBackups, String gender) {
-        System.out.println(YELLOW+"Students in pairBackups for "+ gender +"s"+RESET);
+        System.out.println("\n"+YELLOW+"Students in groupBackups for "+ gender +"s"+RESET);
         for (Student student : groupBackups) {
             System.out.println(student.getName());
         }
 
-        System.out.println(YELLOW+"\nStudents in groupBackups for "+ gender +"s"+RESET);
+        System.out.println("\n"+YELLOW+"Students in pairBackups for "+ gender +"s"+RESET);
         for (Student student : pairBackups) {
             System.out.println(student.getName());
         }
