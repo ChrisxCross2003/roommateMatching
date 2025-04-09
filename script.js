@@ -4,12 +4,12 @@ async function findGroup() {
     resultDiv.innerHTML = ''; // Clear previous results
 
     try {
-        // Load the matches JSON
-        const response = await fetch('matches.json');
+        // Add cache busting to always fetch the latest version
+        const response = await fetch(`matches.json?cacheBust=${Date.now()}`);
         const data = await response.json();
 
         // Check if the student is in the odd-men-out list
-        const oddManOut = data.oddMenOut.find(student =>
+        const oddManOut = (data.oddMenOut || []).find(student =>
             student.id.toLowerCase() === inputId
         );
 
