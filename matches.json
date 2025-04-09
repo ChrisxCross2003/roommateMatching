@@ -2,68 +2,1335 @@
     "groupResults": [
         {
             "groupID": 1,
-            "overallCompatibility": 80.95,
+            "overallCompatibility": 89.52,
             "compatibilityScores": [
-                80.95,
-                "N/A",
-                "N/A"
+                97.14,
+                65.71,
+                100
             ],
             "students": [
                 {
-                    "name": "John Doe",
-                    "id": "jd1aa"
+                    "name": "Christopher Joseph",
+                    "id": "tbh7cm"
                 },
                 {
                     "name": "Alex Smith",
                     "id": "as2bb"
+                },
+                {
+                    "name": "Alex Smith's Roommate",
+                    "id": "as2bb_1"
+                },
+                {
+                    "name": "Leo Thomas",
+                    "id": "lt3cc"
                 }
             ]
         },
         {
             "groupID": 2,
-            "overallCompatibility": 80,
+            "overallCompatibility": 92.38,
             "compatibilityScores": [
-                80,
-                "N/A",
-                "N/A"
+                63.81,
+                100,
+                100
             ],
             "students": [
                 {
-                    "name": "Leo Thomas",
-                    "id": "lt3cc"
-                },
-                {
                     "name": "Ben Tran",
                     "id": "bt4dd"
+                },
+                {
+                    "name": "Ben Tran's Roommate",
+                    "id": "bt4dd_1"
+                },
+                {
+                    "name": "Ben Tran's Roommate",
+                    "id": "bt4dd_2"
+                },
+                {
+                    "name": "Chris Allen",
+                    "id": "ca5ee"
                 }
             ]
         },
         {
             "groupID": 3,
-            "overallCompatibility": 80.95,
+            "overallCompatibility": 87.94,
             "compatibilityScores": [
-                80.95,
-                "N/A",
-                "N/A"
+                85.71,
+                80,
+                85.71
             ],
             "students": [
                 {
-                    "name": "Sarah Kolsan",
-                    "id": "sk1aa"
+                    "name": "David Zhang",
+                    "id": "dz6ff"
                 },
                 {
-                    "name": "Emily Wong",
-                    "id": "ew2bb"
+                    "name": "Eric Nunez",
+                    "id": "en7gg"
+                },
+                {
+                    "name": "Frank Liu",
+                    "id": "fl8hh"
+                },
+                {
+                    "name": "Jeffrey Jones",
+                    "id": "pax9na"
                 }
             ]
         },
         {
             "groupID": 4,
-            "overallCompatibility": 80,
+            "overallCompatibility": 80.95,
             "compatibilityScores": [
+                77.14,
+                85.71,
+                74.29
+            ],
+            "students": [
+                {
+                    "name": "Beckett Boyd",
+                    "id": "ebi7xp"
+                },
+                {
+                    "name": "Jay Harrison",
+                    "id": "xcq7qd"
+                },
+                {
+                    "name": "Tucker Ballard",
+                    "id": "qrs5ut"
+                },
+                {
+                    "name": "Ahmad Heath",
+                    "id": "ynk6sv"
+                }
+            ]
+        },
+        {
+            "groupID": 5,
+            "overallCompatibility": 85.56,
+            "compatibilityScores": [
+                91.43,
+                76.19,
+                84.76
+            ],
+            "students": [
+                {
+                    "name": "Peter Dillon",
+                    "id": "bfe5dl"
+                },
+                {
+                    "name": "Phoenix Gould",
+                    "id": "vad1nr"
+                },
+                {
+                    "name": "Graham Macdonald",
+                    "id": "khe6sk"
+                },
+                {
+                    "name": "Kellen Summers",
+                    "id": "zrj4sm"
+                }
+            ]
+        },
+        {
+            "groupID": 6,
+            "overallCompatibility": 89.05,
+            "compatibilityScores": [
+                88.57,
+                95.24,
+                97.14
+            ],
+            "students": [
+                {
+                    "name": "Reed Chapman",
+                    "id": "jbv4ei"
+                },
+                {
+                    "name": "Sergio Wilkins",
+                    "id": "lco8pj"
+                },
+                {
+                    "name": "Kayson Rose",
+                    "id": "rxm1as"
+                },
+                {
+                    "name": "Ameer Richmond",
+                    "id": "xsa3fl"
+                }
+            ]
+        },
+        {
+            "groupID": 7,
+            "overallCompatibility": 87.3,
+            "compatibilityScores": [
+                92.38,
+                78.1,
+                83.81
+            ],
+            "students": [
+                {
+                    "name": "Reece Knight",
+                    "id": "uho7qb"
+                },
+                {
+                    "name": "Harris Enriquez",
+                    "id": "srm2gw"
+                },
+                {
+                    "name": "Aden Santiago",
+                    "id": "nth7ti"
+                },
+                {
+                    "name": "Dennis Walker",
+                    "id": "jbd7hy"
+                },
+                {
+                    "name": "Dennis Walker's Roommate",
+                    "id": "jbd7hy_1"
+                }
+            ]
+        },
+        {
+            "groupID": 8,
+            "overallCompatibility": 78.1,
+            "compatibilityScores": [
+                38.1,
+                100,
+                60
+            ],
+            "students": [
+                {
+                    "name": "Pierce Zavala",
+                    "id": "qms0jv"
+                },
+                {
+                    "name": "Pierce Zavala's Roommate",
+                    "id": "qms0jv_1"
+                },
+                {
+                    "name": "Jon Russell",
+                    "id": "ouc6oc"
+                },
+                {
+                    "name": "Jon Russell's Roommate",
+                    "id": "ouc6oc_1"
+                }
+            ]
+        },
+        {
+            "groupID": 9,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                78.1,
+                89.52,
+                90.48
+            ],
+            "students": [
+                {
+                    "name": "Talon Nixon",
+                    "id": "fqk4sp"
+                },
+                {
+                    "name": "Felipe Nolan",
+                    "id": "mrb0sj"
+                },
+                {
+                    "name": "Braylon Poole",
+                    "id": "qvw4ae"
+                },
+                {
+                    "name": "Moshe Barker",
+                    "id": "lgr2rk"
+                }
+            ]
+        },
+        {
+            "groupID": 10,
+            "overallCompatibility": 85.08,
+            "compatibilityScores": [
+                92.38,
+                86.67,
+                86.67
+            ],
+            "students": [
+                {
+                    "name": "Ares Kirby",
+                    "id": "ett4zn"
+                },
+                {
+                    "name": "Asher Henry",
+                    "id": "oax1fz"
+                },
+                {
+                    "name": "Cohen Kent",
+                    "id": "bhz8fz"
+                },
+                {
+                    "name": "Yahir Hardy",
+                    "id": "vjh0qi"
+                }
+            ]
+        },
+        {
+            "groupID": 11,
+            "overallCompatibility": 82.7,
+            "compatibilityScores": [
+                85.71,
+                89.52,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Azariah Roach",
+                    "id": "wwk9xy"
+                },
+                {
+                    "name": "Drake McIntyre",
+                    "id": "flm3vm"
+                },
+                {
+                    "name": "Cesar Saunders",
+                    "id": "jlh8ic"
+                },
+                {
+                    "name": "Sutton Conrad",
+                    "id": "xfs5nn"
+                }
+            ]
+        },
+        {
+            "groupID": 12,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                60.95,
+                100,
+                61.9
+            ],
+            "students": [
+                {
+                    "name": "Sylas Quintero",
+                    "id": "vfl6nb"
+                },
+                {
+                    "name": "Sylas Quintero's Roommate",
+                    "id": "vfl6nb_1"
+                },
+                {
+                    "name": "Matteo Bradshaw",
+                    "id": "kjm7uh"
+                },
+                {
+                    "name": "Matteo Bradshaw's Roommate",
+                    "id": "kjm7uh_1"
+                }
+            ]
+        },
+        {
+            "groupID": 13,
+            "overallCompatibility": 84.92,
+            "compatibilityScores": [
+                92.38,
+                88.57,
+                80.95
+            ],
+            "students": [
+                {
+                    "name": "Paxton Henry",
+                    "id": "qqz9qt"
+                },
+                {
+                    "name": "Jackson Armstrong",
+                    "id": "vuk2ct"
+                },
+                {
+                    "name": "Gatlin Sherman",
+                    "id": "zno8bh"
+                },
+                {
+                    "name": "Ayaan Welch",
+                    "id": "fbe2ma"
+                }
+            ]
+        },
+        {
+            "groupID": 14,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                92.38,
+                69.52,
+                31.43
+            ],
+            "students": [
+                {
+                    "name": "Eliezer Kim",
+                    "id": "zyz2ml"
+                },
+                {
+                    "name": "Kingsley Maldonado",
+                    "id": "ivx1sh"
+                },
+                {
+                    "name": "Colby Ortega",
+                    "id": "dzr3tj"
+                },
+                {
+                    "name": "Colby Ortega's Roommate",
+                    "id": "dzr3tj_1"
+                }
+            ]
+        },
+        {
+            "groupID": 15,
+            "overallCompatibility": 86.98,
+            "compatibilityScores": [
+                85.71,
+                50.48,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Duncan Conway",
+                    "id": "ecu6ui"
+                },
+                {
+                    "name": "Winston Boone",
+                    "id": "lue2mt"
+                },
+                {
+                    "name": "Winston Boone's Roommate",
+                    "id": "lue2mt_1"
+                },
+                {
+                    "name": "Terry Wilson",
+                    "id": "fny6bg"
+                }
+            ]
+        },
+        {
+            "groupID": 16,
+            "overallCompatibility": 84.44,
+            "compatibilityScores": [
+                81.9,
+                77.14,
+                86.67
+            ],
+            "students": [
+                {
+                    "name": "Abram Wall",
+                    "id": "jrl5jn"
+                },
+                {
+                    "name": "Wesson Reyes",
+                    "id": "igy9ey"
+                },
+                {
+                    "name": "Aydin Waller",
+                    "id": "pca0lx"
+                },
+                {
+                    "name": "Mathew Goodman",
+                    "id": "ggi1qz"
+                }
+            ]
+        },
+        {
+            "groupID": 17,
+            "overallCompatibility": 79.52,
+            "compatibilityScores": [
+                80.95,
+                72.38,
+                82.86
+            ],
+            "students": [
+                {
+                    "name": "Blaze Brock",
+                    "id": "wut7hf"
+                },
+                {
+                    "name": "Pierce Shannon",
+                    "id": "phj4hg"
+                },
+                {
+                    "name": "Kash Hoover",
+                    "id": "emw1pn"
+                },
+                {
+                    "name": "Gordon Cardenas",
+                    "id": "slh5uk"
+                }
+            ]
+        },
+        {
+            "groupID": 18,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                86.67,
+                87.62,
+                82.86
+            ],
+            "students": [
+                {
+                    "name": "Aryan Sanders",
+                    "id": "ady9sd"
+                },
+                {
+                    "name": "Ryan Finley",
+                    "id": "twl0kb"
+                },
+                {
+                    "name": "Eden Dawson",
+                    "id": "wur9nc"
+                },
+                {
+                    "name": "Isaac Schwartz",
+                    "id": "xsb5ox"
+                },
+                {
+                    "name": "Isaac Schwartz's Roommate",
+                    "id": "xsb5ox_1"
+                }
+            ]
+        },
+        {
+            "groupID": 19,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                72.38,
+                82.86,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Jayceon Marks",
+                    "id": "ivv4za"
+                },
+                {
+                    "name": "Josiah Walker",
+                    "id": "dob9cp"
+                },
+                {
+                    "name": "Ismael Arellano",
+                    "id": "wmq3fa"
+                },
+                {
+                    "name": "Jaxton Petersen",
+                    "id": "aco6qy"
+                },
+                {
+                    "name": "Jaxton Petersen's Roommate",
+                    "id": "aco6qy_1"
+                }
+            ]
+        },
+        {
+            "groupID": 20,
+            "overallCompatibility": 86.03,
+            "compatibilityScores": [
+                80.95,
+                89.52,
+                80
+            ],
+            "students": [
+                {
+                    "name": "Nathanael Hanna",
+                    "id": "bqf8jh"
+                },
+                {
+                    "name": "Lucas Robertson",
+                    "id": "rgf6oh"
+                },
+                {
+                    "name": "Titan Andrews",
+                    "id": "pmm5fs"
+                },
+                {
+                    "name": "Donovan Cuevas",
+                    "id": "zzb1wc"
+                }
+            ]
+        },
+        {
+            "groupID": 21,
+            "overallCompatibility": 88.25,
+            "compatibilityScores": [
+                90.48,
+                92.38,
+                61.9
+            ],
+            "students": [
+                {
+                    "name": "Otis Hudson",
+                    "id": "bwr7oo"
+                },
+                {
+                    "name": "Huxley Norris",
+                    "id": "puc3wp"
+                },
+                {
+                    "name": "Cannon Salinas",
+                    "id": "gyq2tt"
+                },
+                {
+                    "name": "Cannon Salinas's Roommate",
+                    "id": "gyq2tt_1"
+                }
+            ]
+        },
+        {
+            "groupID": 22,
+            "overallCompatibility": 82.54,
+            "compatibilityScores": [
+                87.62,
+                79.05,
+                80.95
+            ],
+            "students": [
+                {
+                    "name": "Eliseo Cochran",
+                    "id": "ntq3xr"
+                },
+                {
+                    "name": "Leland Corona",
+                    "id": "cqc7em"
+                },
+                {
+                    "name": "Ismael Hunter",
+                    "id": "jtb7wk"
+                },
+                {
+                    "name": "Lorenzo Blake",
+                    "id": "rjx0mz"
+                }
+            ]
+        },
+        {
+            "groupID": 23,
+            "overallCompatibility": 83.49,
+            "compatibilityScores": [
+                83.81,
+                84.76,
+                92.38
+            ],
+            "students": [
+                {
+                    "name": "Jair Travis",
+                    "id": "sez6hy"
+                },
+                {
+                    "name": "Conrad Stein",
+                    "id": "xdd4yf"
+                },
+                {
+                    "name": "Zechariah McGuire",
+                    "id": "yny1gs"
+                },
+                {
+                    "name": "Zaire Diaz",
+                    "id": "tvd6bj"
+                }
+            ]
+        },
+        {
+            "groupID": 24,
+            "overallCompatibility": 85.4,
+            "compatibilityScores": [
+                85.71,
+                68.57,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Juan Moran",
+                    "id": "szi4cv"
+                },
+                {
+                    "name": "Zion Gillespie",
+                    "id": "iwg2qu"
+                },
+                {
+                    "name": "Zion Gillespie's Roommate",
+                    "id": "iwg2qu_1"
+                },
+                {
+                    "name": "Pablo Kennedy",
+                    "id": "cjb1ia"
+                },
+                {
+                    "name": "Pablo Kennedy's Roommate",
+                    "id": "cjb1ia_1"
+                }
+            ]
+        },
+        {
+            "groupID": 25,
+            "overallCompatibility": 88.25,
+            "compatibilityScores": [
+                92.38,
+                88.57,
+                83.81
+            ],
+            "students": [
+                {
+                    "name": "Otto Schneider",
+                    "id": "hkn2no"
+                },
+                {
+                    "name": "Moshe Buck",
+                    "id": "umf2ck"
+                },
+                {
+                    "name": "Zachary Fletcher",
+                    "id": "jnm4vh"
+                },
+                {
+                    "name": "Nathan Leonard",
+                    "id": "wfo3ql"
+                }
+            ]
+        },
+        {
+            "groupID": 26,
+            "overallCompatibility": 74.29,
+            "compatibilityScores": [
+                44.76,
+                100,
+                61.9
+            ],
+            "students": [
+                {
+                    "name": "Nikolas Diaz",
+                    "id": "wob6sm"
+                },
+                {
+                    "name": "Nikolas Diaz's Roommate",
+                    "id": "wob6sm_1"
+                },
+                {
+                    "name": "Ishaan Nichols",
+                    "id": "cdf9cf"
+                },
+                {
+                    "name": "Ishaan Nichols's Roommate",
+                    "id": "cdf9cf_1"
+                }
+            ]
+        },
+        {
+            "groupID": 27,
+            "overallCompatibility": 74.29,
+            "compatibilityScores": [
+                64.76,
+                100,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Theodore Farrell",
+                    "id": "sbp9bu"
+                },
+                {
+                    "name": "Theodore Farrell's Roommate",
+                    "id": "sbp9bu_1"
+                },
+                {
+                    "name": "Theodore Farrell's Roommate",
+                    "id": "sbp9bu_2"
+                },
+                {
+                    "name": "Moises Larson",
+                    "id": "nar8ez"
+                },
+                {
+                    "name": "Moises Larson's Roommate",
+                    "id": "nar8ez_1"
+                }
+            ]
+        },
+        {
+            "groupID": 28,
+            "overallCompatibility": 87.3,
+            "compatibilityScores": [
+                92.38,
+                84.76,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Judson Dickerson",
+                    "id": "ipr1tu"
+                },
+                {
+                    "name": "Kylen Webb",
+                    "id": "xkg1lz"
+                },
+                {
+                    "name": "Kole Gates",
+                    "id": "jkh5oj"
+                },
+                {
+                    "name": "Barrett Blake",
+                    "id": "ndm7yi"
+                }
+            ]
+        },
+        {
+            "groupID": 29,
+            "overallCompatibility": 86.51,
+            "compatibilityScores": [
+                91.43,
+                88.57,
+                86.67
+            ],
+            "students": [
+                {
+                    "name": "Brody Pitts",
+                    "id": "kdt3ph"
+                },
+                {
+                    "name": "Matias Perry",
+                    "id": "xav1jb"
+                },
+                {
+                    "name": "Jeffery Benson",
+                    "id": "toy9wp"
+                },
+                {
+                    "name": "Ayan Farrell",
+                    "id": "qfd2iv"
+                }
+            ]
+        },
+        {
+            "groupID": 30,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                84.76,
+                91.43
+            ],
+            "students": [
+                {
+                    "name": "Ulises Luna",
+                    "id": "ihq6oi"
+                },
+                {
+                    "name": "Romeo Bauer",
+                    "id": "rvl1hp"
+                },
+                {
+                    "name": "Edison Martinez",
+                    "id": "lwn1lt"
+                },
+                {
+                    "name": "Khari Dennis",
+                    "id": "giy0gx"
+                }
+            ]
+        },
+        {
+            "groupID": 31,
+            "overallCompatibility": 83.81,
+            "compatibilityScores": [
+                94.29,
+                84.76,
+                80.95
+            ],
+            "students": [
+                {
+                    "name": "Ahmed Callahan",
+                    "id": "kuf2rd"
+                },
+                {
+                    "name": "Ahmed Fischer",
+                    "id": "uvo0vd"
+                },
+                {
+                    "name": "Moshe Bryant",
+                    "id": "oom0ya"
+                },
+                {
+                    "name": "Maximus Mason",
+                    "id": "uhq7zc"
+                }
+            ]
+        },
+        {
+            "groupID": 32,
+            "overallCompatibility": 85.24,
+            "compatibilityScores": [
+                79.05,
+                88.57,
+                89.52
+            ],
+            "students": [
+                {
+                    "name": "Ellis Bush",
+                    "id": "bbt1ny"
+                },
+                {
+                    "name": "Pierce McFarland",
+                    "id": "upx5vw"
+                },
+                {
+                    "name": "Garrett Perkins",
+                    "id": "pwh6as"
+                },
+                {
+                    "name": "Wilson Stevenson",
+                    "id": "qhs9qz"
+                },
+                {
+                    "name": "Wilson Stevenson's Roommate",
+                    "id": "qhs9qz_1"
+                }
+            ]
+        },
+        {
+            "groupID": 33,
+            "overallCompatibility": 87.62,
+            "compatibilityScores": [
+                48.57,
+                100,
+                60.95
+            ],
+            "students": [
+                {
+                    "name": "Lawrence Espinosa",
+                    "id": "ted2do"
+                },
+                {
+                    "name": "Lawrence Espinosa's Roommate",
+                    "id": "ted2do_1"
+                },
+                {
+                    "name": "Walker Preston",
+                    "id": "vdt1wh"
+                },
+                {
+                    "name": "Walker Preston's Roommate",
+                    "id": "vdt1wh_1"
+                }
+            ]
+        },
+        {
+            "groupID": 34,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                59.05,
+                100,
+                92.38
+            ],
+            "students": [
+                {
+                    "name": "Dangelo Castillo",
+                    "id": "nlr5mm"
+                },
+                {
+                    "name": "Dangelo Castillo's Roommate",
+                    "id": "nlr5mm_1"
+                },
+                {
+                    "name": "Hendrix Fields",
+                    "id": "njb2oe"
+                },
+                {
+                    "name": "Hank O\u2019Connell",
+                    "id": "vey9xw"
+                }
+            ]
+        },
+        {
+            "groupID": 35,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                78.1,
+                62.86,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Kamari Landry",
+                    "id": "kxa8kn"
+                },
+                {
+                    "name": "Enzo Lindsey",
+                    "id": "rwd3tb"
+                },
+                {
+                    "name": "Enzo Lindsey's Roommate",
+                    "id": "rwd3tb_1"
+                },
+                {
+                    "name": "Jakobe Barnett",
+                    "id": "pmp6ib"
+                }
+            ]
+        },
+        {
+            "groupID": 36,
+            "overallCompatibility": 84.29,
+            "compatibilityScores": [
+                76.19,
+                90.48,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Maximo Kane",
+                    "id": "vki0dy"
+                },
+                {
+                    "name": "Layne Hutchinson",
+                    "id": "del4es"
+                },
+                {
+                    "name": "Wade Briggs",
+                    "id": "tdd2pr"
+                },
+                {
+                    "name": "Callum McClure",
+                    "id": "anf9vi"
+                }
+            ]
+        },
+        {
+            "groupID": 37,
+            "overallCompatibility": 83.33,
+            "compatibilityScores": [
+                85.71,
+                86.67,
+                80
+            ],
+            "students": [
+                {
+                    "name": "Lionel Hines",
+                    "id": "ypd2jj"
+                },
+                {
+                    "name": "Cairo Hampton",
+                    "id": "nwx7ez"
+                },
+                {
+                    "name": "Simon Duffy",
+                    "id": "bey9xf"
+                },
+                {
+                    "name": "Frankie Pittman",
+                    "id": "rqe0pf"
+                }
+            ]
+        },
+        {
+            "groupID": 38,
+            "overallCompatibility": 84.6,
+            "compatibilityScores": [
+                85.71,
                 80,
-                "N/A",
-                "N/A"
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Xzavier Bush",
+                    "id": "kkt2to"
+                },
+                {
+                    "name": "Harlem Simpson",
+                    "id": "lsv9fo"
+                },
+                {
+                    "name": "Marvin Lamb",
+                    "id": "alp9ez"
+                },
+                {
+                    "name": "Benjamin Buckley",
+                    "id": "qgn0ml"
+                }
+            ]
+        },
+        {
+            "groupID": 39,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                79.05,
+                90.48,
+                54.29
+            ],
+            "students": [
+                {
+                    "name": "River Vazquez",
+                    "id": "vvp7vw"
+                },
+                {
+                    "name": "Axl Kane",
+                    "id": "klc8qa"
+                },
+                {
+                    "name": "Shiloh Delarosa",
+                    "id": "kxd6ov"
+                },
+                {
+                    "name": "Shiloh Delarosa's Roommate",
+                    "id": "kxd6ov_1"
+                }
+            ]
+        },
+        {
+            "groupID": 40,
+            "overallCompatibility": 84.6,
+            "compatibilityScores": [
+                89.52,
+                92.38,
+                66.67
+            ],
+            "students": [
+                {
+                    "name": "Nolan Guerra",
+                    "id": "wdn9em"
+                },
+                {
+                    "name": "Victor Boone",
+                    "id": "lck4td"
+                },
+                {
+                    "name": "Eithan Deleon",
+                    "id": "gpq5es"
+                },
+                {
+                    "name": "Camden Barnes",
+                    "id": "chg2gc"
+                }
+            ]
+        },
+        {
+            "groupID": 41,
+            "overallCompatibility": 78.41,
+            "compatibilityScores": [
+                83.81,
+                81.9,
+                60.95
+            ],
+            "students": [
+                {
+                    "name": "Leonidas Jaramillo",
+                    "id": "wpx9ps"
+                },
+                {
+                    "name": "Ibrahim Brooks",
+                    "id": "boa4dj"
+                },
+                {
+                    "name": "Justin Huerta",
+                    "id": "jpj1bz"
+                },
+                {
+                    "name": "Bruno Byrd",
+                    "id": "qxo4mm"
+                }
+            ]
+        },
+        {
+            "groupID": 42,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                86.67,
+                90.48,
+                72.38
+            ],
+            "students": [
+                {
+                    "name": "Castiel Salas",
+                    "id": "jmv6uv"
+                },
+                {
+                    "name": "Declan Henderson",
+                    "id": "cyp2wg"
+                },
+                {
+                    "name": "Brennan Coffey",
+                    "id": "axs2yb"
+                },
+                {
+                    "name": "Kenneth Randolph",
+                    "id": "bwx4jt"
+                }
+            ]
+        },
+        {
+            "groupID": 43,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                99.05,
+                88.57,
+                69.52
+            ],
+            "students": [
+                {
+                    "name": "Jericho Abbott",
+                    "id": "iso4yi"
+                },
+                {
+                    "name": "Landyn Andrews",
+                    "id": "lgm5bv"
+                },
+                {
+                    "name": "Boston Phan",
+                    "id": "rxz5ql"
+                },
+                {
+                    "name": "Kylan Mathews",
+                    "id": "nss8bh"
+                }
+            ]
+        },
+        {
+            "groupID": 44,
+            "overallCompatibility": 83.81,
+            "compatibilityScores": [
+                87.62,
+                79.05,
+                89.52
+            ],
+            "students": [
+                {
+                    "name": "Lionel Good",
+                    "id": "vth7hj"
+                },
+                {
+                    "name": "Zaid Sheppard",
+                    "id": "cjh5dp"
+                },
+                {
+                    "name": "Ledger Phan",
+                    "id": "bsm0af"
+                },
+                {
+                    "name": "Braden Chen",
+                    "id": "xzc7ii"
+                },
+                {
+                    "name": "Braden Chen's Roommate",
+                    "id": "xzc7ii_1"
+                }
+            ]
+        },
+        {
+            "groupID": 45,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                77.14,
+                86.67,
+                86.67
+            ],
+            "students": [
+                {
+                    "name": "Ridge Neal",
+                    "id": "aao5ja"
+                },
+                {
+                    "name": "Reuben Richards",
+                    "id": "xix2yy"
+                },
+                {
+                    "name": "Anderson Brooks",
+                    "id": "osc6gy"
+                },
+                {
+                    "name": "Zaire Price",
+                    "id": "lzj8bm"
+                }
+            ]
+        },
+        {
+            "groupID": 46,
+            "overallCompatibility": 87.62,
+            "compatibilityScores": [
+                52.38,
+                100,
+                89.52
+            ],
+            "students": [
+                {
+                    "name": "Santiago Finley",
+                    "id": "vvf4pw"
+                },
+                {
+                    "name": "Santiago Finley's Roommate",
+                    "id": "vvf4pw_1"
+                },
+                {
+                    "name": "Cohen Scott",
+                    "id": "iug1hl"
+                },
+                {
+                    "name": "Kade McDaniel",
+                    "id": "gem0oj"
+                }
+            ]
+        },
+        {
+            "groupID": 47,
+            "overallCompatibility": 80.79,
+            "compatibilityScores": [
+                85.71,
+                81.9,
+                79.05
+            ],
+            "students": [
+                {
+                    "name": "Kyler Vazquez",
+                    "id": "uni6tc"
+                },
+                {
+                    "name": "Avi Morgan",
+                    "id": "obi4jn"
+                },
+                {
+                    "name": "Kylo Valenzuela",
+                    "id": "pxo0jn"
+                },
+                {
+                    "name": "Jovanni Gilmore",
+                    "id": "mlb2xm"
+                }
+            ]
+        },
+        {
+            "groupID": 48,
+            "overallCompatibility": 95.24,
+            "compatibilityScores": [
+                53.33,
+                100,
+                53.33
+            ],
+            "students": [
+                {
+                    "name": "Sarah Kim",
+                    "id": "sk1aa"
+                },
+                {
+                    "name": "Sarah Kim's Roommate",
+                    "id": "sk1aa_1"
+                },
+                {
+                    "name": "Emily Wong",
+                    "id": "ew2bb"
+                },
+                {
+                    "name": "Emily Wong's Roommate",
+                    "id": "ew2bb_1"
+                }
+            ]
+        },
+        {
+            "groupID": 49,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                63.81,
+                100
             ],
             "students": [
                 {
@@ -73,22 +1340,3109 @@
                 {
                     "name": "Rachel Kim",
                     "id": "rk4dd"
+                },
+                {
+                    "name": "Rachel Kim's Roommate",
+                    "id": "rk4dd_1"
+                },
+                {
+                    "name": "Rachel Kim's Roommate",
+                    "id": "rk4dd_2"
+                }
+            ]
+        },
+        {
+            "groupID": 50,
+            "overallCompatibility": 87.3,
+            "compatibilityScores": [
+                95.24,
+                82.86,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Olivia Park",
+                    "id": "op5ee"
+                },
+                {
+                    "name": "Natalie Chen",
+                    "id": "nc6ff"
+                },
+                {
+                    "name": "Julia Rivera",
+                    "id": "jr7gg"
+                },
+                {
+                    "name": "Ashley Moore",
+                    "id": "am8hh"
+                }
+            ]
+        },
+        {
+            "groupID": 51,
+            "overallCompatibility": 84.44,
+            "compatibilityScores": [
+                58.1,
+                100,
+                87.62
+            ],
+            "students": [
+                {
+                    "name": "Lily Beyer",
+                    "id": "eyn7jq"
+                },
+                {
+                    "name": "Lily Beyer's Roommate",
+                    "id": "eyn7jq_1"
+                },
+                {
+                    "name": "Georgia Fletcher",
+                    "id": "eht2dp"
+                },
+                {
+                    "name": "Jasmine Weaver",
+                    "id": "kff7ff"
+                }
+            ]
+        },
+        {
+            "groupID": 52,
+            "overallCompatibility": 82.7,
+            "compatibilityScores": [
+                80.95,
+                86.67,
+                80.95
+            ],
+            "students": [
+                {
+                    "name": "Alejandra Combs",
+                    "id": "iae7yj"
+                },
+                {
+                    "name": "Amani Hudson",
+                    "id": "niw8an"
+                },
+                {
+                    "name": "Laurel Estrada",
+                    "id": "jhy9yi"
+                },
+                {
+                    "name": "Violeta Rice",
+                    "id": "zbi4mv"
+                }
+            ]
+        },
+        {
+            "groupID": 53,
+            "overallCompatibility": 88.89,
+            "compatibilityScores": [
+                79.05,
+                93.33,
+                84.76
+            ],
+            "students": [
+                {
+                    "name": "Rosalia Durham",
+                    "id": "ued8go"
+                },
+                {
+                    "name": "Zuri Zimmerman",
+                    "id": "sfj6ld"
+                },
+                {
+                    "name": "Amalia Day",
+                    "id": "zza0ww"
+                },
+                {
+                    "name": "Rylan Kim",
+                    "id": "wzn7co"
+                }
+            ]
+        },
+        {
+            "groupID": 54,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                85.71,
+                80,
+                86.67
+            ],
+            "students": [
+                {
+                    "name": "Whitney Underwood",
+                    "id": "vvj6yo"
+                },
+                {
+                    "name": "Gracie Cantrell",
+                    "id": "cyf8hr"
+                },
+                {
+                    "name": "Nellie Bonilla",
+                    "id": "gut0ph"
+                },
+                {
+                    "name": "Nyla Allison",
+                    "id": "btr5kx"
+                }
+            ]
+        },
+        {
+            "groupID": 55,
+            "overallCompatibility": 90.48,
+            "compatibilityScores": [
+                55.24,
+                100,
+                61.9
+            ],
+            "students": [
+                {
+                    "name": "Hazel Floyd",
+                    "id": "mor7eg"
+                },
+                {
+                    "name": "Hazel Floyd's Roommate",
+                    "id": "mor7eg_1"
+                },
+                {
+                    "name": "Liv Buck",
+                    "id": "ybl0vg"
+                },
+                {
+                    "name": "Liv Buck's Roommate",
+                    "id": "ybl0vg_1"
+                },
+                {
+                    "name": "Liv Buck's Roommate",
+                    "id": "ybl0vg_2"
+                }
+            ]
+        },
+        {
+            "groupID": 56,
+            "overallCompatibility": 77.14,
+            "compatibilityScores": [
+                60.95,
+                100,
+                55.24
+            ],
+            "students": [
+                {
+                    "name": "Raelynn Gaines",
+                    "id": "qnk6sq"
+                },
+                {
+                    "name": "Raelynn Gaines's Roommate",
+                    "id": "qnk6sq_1"
+                },
+                {
+                    "name": "Deborah Lucero",
+                    "id": "rez1bn"
+                },
+                {
+                    "name": "Deborah Lucero's Roommate",
+                    "id": "rez1bn_1"
+                },
+                {
+                    "name": "Deborah Lucero's Roommate",
+                    "id": "rez1bn_2"
+                }
+            ]
+        },
+        {
+            "groupID": 57,
+            "overallCompatibility": 86.98,
+            "compatibilityScores": [
+                84.76,
+                96.19,
+                79.05
+            ],
+            "students": [
+                {
+                    "name": "Itzayana Yates",
+                    "id": "wji5go"
+                },
+                {
+                    "name": "Bonnie Macias",
+                    "id": "hxk4er"
+                },
+                {
+                    "name": "Remington Park",
+                    "id": "hyw1xt"
+                },
+                {
+                    "name": "Skyla Bentley",
+                    "id": "mea7ug"
+                }
+            ]
+        },
+        {
+            "groupID": 58,
+            "overallCompatibility": 85.56,
+            "compatibilityScores": [
+                75.24,
+                92.38,
+                93.33
+            ],
+            "students": [
+                {
+                    "name": "Indie Luna",
+                    "id": "ljq6wj"
+                },
+                {
+                    "name": "Morgan Young",
+                    "id": "tpi8er"
+                },
+                {
+                    "name": "Sloane Wang",
+                    "id": "yim8py"
+                },
+                {
+                    "name": "Jazmine Mayer",
+                    "id": "mfa2az"
+                }
+            ]
+        },
+        {
+            "groupID": 59,
+            "overallCompatibility": 86.83,
+            "compatibilityScores": [
+                86.67,
+                90.48,
+                93.33
+            ],
+            "students": [
+                {
+                    "name": "Jessica Wiggins",
+                    "id": "fog1du"
+                },
+                {
+                    "name": "Lyanna Sparks",
+                    "id": "keu1jy"
+                },
+                {
+                    "name": "Rebekah Graves",
+                    "id": "dys6yl"
+                },
+                {
+                    "name": "Meadow Holloway",
+                    "id": "tvw1jo"
+                }
+            ]
+        },
+        {
+            "groupID": 60,
+            "overallCompatibility": 94.29,
+            "compatibilityScores": [
+                59.05,
+                100,
+                45.71
+            ],
+            "students": [
+                {
+                    "name": "Bexley Houston",
+                    "id": "aju4dp"
+                },
+                {
+                    "name": "Bexley Houston's Roommate",
+                    "id": "aju4dp_1"
+                },
+                {
+                    "name": "Keyla Black",
+                    "id": "akm9wn"
+                },
+                {
+                    "name": "Keyla Black's Roommate",
+                    "id": "akm9wn_1"
+                }
+            ]
+        },
+        {
+            "groupID": 61,
+            "overallCompatibility": 78.41,
+            "compatibilityScores": [
+                37.14,
+                100,
+                83.81
+            ],
+            "students": [
+                {
+                    "name": "Berkley Bishop",
+                    "id": "jyi9ap"
+                },
+                {
+                    "name": "Berkley Bishop's Roommate",
+                    "id": "jyi9ap_1"
+                },
+                {
+                    "name": "Summer Taylor",
+                    "id": "fnp7zo"
+                },
+                {
+                    "name": "Zainab Huang",
+                    "id": "dav8uy"
+                }
+            ]
+        },
+        {
+            "groupID": 62,
+            "overallCompatibility": 86.98,
+            "compatibilityScores": [
+                85.71,
+                61.9,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Elaina Monroe",
+                    "id": "uhn6xx"
+                },
+                {
+                    "name": "Lilah Lu",
+                    "id": "oek9jh"
+                },
+                {
+                    "name": "Lilah Lu's Roommate",
+                    "id": "oek9jh_1"
+                },
+                {
+                    "name": "Ryann Ochoa",
+                    "id": "dxr6jz"
+                }
+            ]
+        },
+        {
+            "groupID": 63,
+            "overallCompatibility": 85.87,
+            "compatibilityScores": [
+                81.9,
+                81.9,
+                95.24
+            ],
+            "students": [
+                {
+                    "name": "Mariam Cano",
+                    "id": "phv6rp"
+                },
+                {
+                    "name": "Luna Mercado",
+                    "id": "gye0ya"
+                },
+                {
+                    "name": "Jayda Trejo",
+                    "id": "aoa6gw"
+                },
+                {
+                    "name": "Audrey Hanna",
+                    "id": "jnf5gj"
+                }
+            ]
+        },
+        {
+            "groupID": 64,
+            "overallCompatibility": 87.3,
+            "compatibilityScores": [
+                87.62,
+                84.76,
+                88.57
+            ],
+            "students": [
+                {
+                    "name": "Whitley Wiley",
+                    "id": "dfd7ud"
+                },
+                {
+                    "name": "Carolina Fitzpatrick",
+                    "id": "nii2mz"
+                },
+                {
+                    "name": "Jada Davenport",
+                    "id": "xjl1tv"
+                },
+                {
+                    "name": "Rylie Ali",
+                    "id": "eum8hp"
+                }
+            ]
+        },
+        {
+            "groupID": 65,
+            "overallCompatibility": 80,
+            "compatibilityScores": [
+                68.57,
+                47.62,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Shay Floyd",
+                    "id": "xfw3wt"
+                },
+                {
+                    "name": "Harlee Edwards",
+                    "id": "mnx6fk"
+                },
+                {
+                    "name": "Harlee Edwards's Roommate",
+                    "id": "mnx6fk_1"
+                },
+                {
+                    "name": "Zoe Carr",
+                    "id": "tql0pu"
+                },
+                {
+                    "name": "Zoe Carr's Roommate",
+                    "id": "tql0pu_1"
+                },
+                {
+                    "name": "Zoe Carr's Roommate",
+                    "id": "tql0pu_2"
+                }
+            ]
+        },
+        {
+            "groupID": 66,
+            "overallCompatibility": 83.02,
+            "compatibilityScores": [
+                88.57,
+                75.24,
+                79.05
+            ],
+            "students": [
+                {
+                    "name": "Raven Buckley",
+                    "id": "kgt2rs"
+                },
+                {
+                    "name": "Everleigh Cruz",
+                    "id": "lgw2bt"
+                },
+                {
+                    "name": "Jovie Maxwell",
+                    "id": "uyh7os"
+                },
+                {
+                    "name": "Veronica Hill",
+                    "id": "cmg1hz"
+                }
+            ]
+        },
+        {
+            "groupID": 67,
+            "overallCompatibility": 87.94,
+            "compatibilityScores": [
+                67.62,
+                100,
+                94.29
+            ],
+            "students": [
+                {
+                    "name": "Lilliana Hardy",
+                    "id": "qdq3qa"
+                },
+                {
+                    "name": "Lilliana Hardy's Roommate",
+                    "id": "qdq3qa_1"
+                },
+                {
+                    "name": "Monica Roberts",
+                    "id": "tii1tz"
+                },
+                {
+                    "name": "Hazel Duran",
+                    "id": "zul4nn"
+                }
+            ]
+        },
+        {
+            "groupID": 68,
+            "overallCompatibility": 85.4,
+            "compatibilityScores": [
+                51.43,
+                100,
+                82.86
+            ],
+            "students": [
+                {
+                    "name": "Faye Warner",
+                    "id": "kaf5hw"
+                },
+                {
+                    "name": "Faye Warner's Roommate",
+                    "id": "kaf5hw_1"
+                },
+                {
+                    "name": "Fernanda Beard",
+                    "id": "pbu3il"
+                },
+                {
+                    "name": "Cynthia Bridges",
+                    "id": "piq2gf"
+                }
+            ]
+        },
+        {
+            "groupID": 69,
+            "overallCompatibility": 76.83,
+            "compatibilityScores": [
+                76.19,
+                42.86,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Julieta Davis",
+                    "id": "klp2ul"
+                },
+                {
+                    "name": "Harmony Rubio",
+                    "id": "ujs3ud"
+                },
+                {
+                    "name": "Harmony Rubio's Roommate",
+                    "id": "ujs3ud_1"
+                },
+                {
+                    "name": "Payton Wolfe",
+                    "id": "erl2iv"
+                }
+            ]
+        },
+        {
+            "groupID": 70,
+            "overallCompatibility": 84.29,
+            "compatibilityScores": [
+                80.95,
+                91.43,
+                87.62
+            ],
+            "students": [
+                {
+                    "name": "Adele Chase",
+                    "id": "usc3fc"
+                },
+                {
+                    "name": "Kamila Villanueva",
+                    "id": "awi8cb"
+                },
+                {
+                    "name": "Arielle Owen",
+                    "id": "mpc2cq"
+                },
+                {
+                    "name": "Royalty McIntyre",
+                    "id": "zyh8jo"
+                }
+            ]
+        },
+        {
+            "groupID": 71,
+            "overallCompatibility": 81.27,
+            "compatibilityScores": [
+                72.38,
+                56.19,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Alma Guerra",
+                    "id": "dfb9oe"
+                },
+                {
+                    "name": "Marianna Duran",
+                    "id": "eic7ei"
+                },
+                {
+                    "name": "Marianna Duran's Roommate",
+                    "id": "eic7ei_1"
+                },
+                {
+                    "name": "Khloe Webb",
+                    "id": "rbd6ol"
+                },
+                {
+                    "name": "Khloe Webb's Roommate",
+                    "id": "rbd6ol_1"
+                }
+            ]
+        },
+        {
+            "groupID": 72,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                82.86,
+                86.67,
+                94.29
+            ],
+            "students": [
+                {
+                    "name": "Mazikee Charles",
+                    "id": "mfr0hb"
+                },
+                {
+                    "name": "Leilany Lynn",
+                    "id": "alo7ar"
+                },
+                {
+                    "name": "April Lloyd",
+                    "id": "edh7xf"
+                },
+                {
+                    "name": "Elena Washington",
+                    "id": "rjf4ql"
+                }
+            ]
+        },
+        {
+            "groupID": 73,
+            "overallCompatibility": 81.9,
+            "compatibilityScores": [
+                60.95,
+                100,
+                54.29
+            ],
+            "students": [
+                {
+                    "name": "Celeste Woods",
+                    "id": "slq1lt"
+                },
+                {
+                    "name": "Celeste Woods's Roommate",
+                    "id": "slq1lt_1"
+                },
+                {
+                    "name": "Alianna Page",
+                    "id": "edj8bm"
+                },
+                {
+                    "name": "Alianna Page's Roommate",
+                    "id": "edj8bm_1"
+                }
+            ]
+        },
+        {
+            "groupID": 74,
+            "overallCompatibility": 86.35,
+            "compatibilityScores": [
+                48.57,
+                100,
+                87.62
+            ],
+            "students": [
+                {
+                    "name": "Brianna Robles",
+                    "id": "ixz9ck"
+                },
+                {
+                    "name": "Brianna Robles's Roommate",
+                    "id": "ixz9ck_1"
+                },
+                {
+                    "name": "Delaney Macias",
+                    "id": "xec5qn"
+                },
+                {
+                    "name": "Livia Stevens",
+                    "id": "ybz3ba"
+                }
+            ]
+        },
+        {
+            "groupID": 75,
+            "overallCompatibility": 80.32,
+            "compatibilityScores": [
+                78.1,
+                62.86,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Anaya Correa",
+                    "id": "cbh0rr"
+                },
+                {
+                    "name": "Demi Melendez",
+                    "id": "kko5xw"
+                },
+                {
+                    "name": "Demi Melendez's Roommate",
+                    "id": "kko5xw_1"
+                },
+                {
+                    "name": "Elena Schaefer",
+                    "id": "tcz3ap"
+                },
+                {
+                    "name": "Elena Schaefer's Roommate",
+                    "id": "tcz3ap_1"
+                }
+            ]
+        },
+        {
+            "groupID": 76,
+            "overallCompatibility": 88.57,
+            "compatibilityScores": [
+                48.57,
+                100,
+                57.14
+            ],
+            "students": [
+                {
+                    "name": "Aliyah Thompson",
+                    "id": "chw1uo"
+                },
+                {
+                    "name": "Aliyah Thompson's Roommate",
+                    "id": "chw1uo_1"
+                },
+                {
+                    "name": "Kassidy Patton",
+                    "id": "lmk6jy"
+                },
+                {
+                    "name": "Kassidy Patton's Roommate",
+                    "id": "lmk6jy_1"
+                }
+            ]
+        },
+        {
+            "groupID": 77,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                45.71,
+                100,
+                87.62
+            ],
+            "students": [
+                {
+                    "name": "Alayna Pugh",
+                    "id": "lzq5zm"
+                },
+                {
+                    "name": "Alayna Pugh's Roommate",
+                    "id": "lzq5zm_1"
+                },
+                {
+                    "name": "Opal Ashley",
+                    "id": "kbc4nr"
+                },
+                {
+                    "name": "Ariella Giles",
+                    "id": "vjm3lr"
+                }
+            ]
+        },
+        {
+            "groupID": 78,
+            "overallCompatibility": 78.73,
+            "compatibilityScores": [
+                85.71,
+                23.81,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Melina Soto",
+                    "id": "mjx9cn"
+                },
+                {
+                    "name": "Amanda Salazar",
+                    "id": "rst9ws"
+                },
+                {
+                    "name": "Amanda Salazar's Roommate",
+                    "id": "rst9ws_1"
+                },
+                {
+                    "name": "Nala McClain",
+                    "id": "juu9qw"
+                }
+            ]
+        },
+        {
+            "groupID": 79,
+            "overallCompatibility": 84.44,
+            "compatibilityScores": [
+                80,
+                88.57,
+                87.62
+            ],
+            "students": [
+                {
+                    "name": "Julie Lane",
+                    "id": "aae6ac"
+                },
+                {
+                    "name": "Clara Whitney",
+                    "id": "cbo0zl"
+                },
+                {
+                    "name": "Collins Truong",
+                    "id": "uxt1hy"
+                },
+                {
+                    "name": "Kassidy Ayers",
+                    "id": "fxh0rn"
+                },
+                {
+                    "name": "Kassidy Ayers's Roommate",
+                    "id": "fxh0rn_1"
+                }
+            ]
+        },
+        {
+            "groupID": 80,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                85.71,
+                69.52,
+                72.38
+            ],
+            "students": [
+                {
+                    "name": "Journey McKinney",
+                    "id": "zgu3le"
+                },
+                {
+                    "name": "Haley Collier",
+                    "id": "sus2el"
+                },
+                {
+                    "name": "Harper Choi",
+                    "id": "qoc3vi"
+                },
+                {
+                    "name": "Maisie Richard",
+                    "id": "zrl4np"
+                }
+            ]
+        },
+        {
+            "groupID": 81,
+            "overallCompatibility": 81.43,
+            "compatibilityScores": [
+                79.05,
+                81.9,
+                83.81
+            ],
+            "students": [
+                {
+                    "name": "Kimber Richard",
+                    "id": "egr8wt"
+                },
+                {
+                    "name": "Maci Macias",
+                    "id": "hby6cl"
+                },
+                {
+                    "name": "Annika Horton",
+                    "id": "vzs1ai"
+                },
+                {
+                    "name": "Danielle Anderson",
+                    "id": "unl1nb"
+                }
+            ]
+        },
+        {
+            "groupID": 82,
+            "overallCompatibility": 89.52,
+            "compatibilityScores": [
+                71.43,
+                100,
+                87.62
+            ],
+            "students": [
+                {
+                    "name": "Regina Hess",
+                    "id": "dqp6xq"
+                },
+                {
+                    "name": "Regina Hess's Roommate",
+                    "id": "dqp6xq_1"
+                },
+                {
+                    "name": "Braylee Santos",
+                    "id": "llb8bc"
+                },
+                {
+                    "name": "Indie Peralta",
+                    "id": "len1bs"
+                },
+                {
+                    "name": "Indie Peralta's Roommate",
+                    "id": "len1bs_1"
+                }
+            ]
+        },
+        {
+            "groupID": 83,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                78.1,
+                100,
+                88.57
+            ],
+            "students": [
+                {
+                    "name": "Eva Welch",
+                    "id": "qnz2sn"
+                },
+                {
+                    "name": "Eva Welch's Roommate",
+                    "id": "qnz2sn_1"
+                },
+                {
+                    "name": "Jillian Holland",
+                    "id": "oyd2kx"
+                },
+                {
+                    "name": "Avalynn Cervantes",
+                    "id": "qck4rm"
+                }
+            ]
+        },
+        {
+            "groupID": 84,
+            "overallCompatibility": 92.06,
+            "compatibilityScores": [
+                66.67,
+                100,
+                89.52
+            ],
+            "students": [
+                {
+                    "name": "Brynleigh Wagner",
+                    "id": "oly0lm"
+                },
+                {
+                    "name": "Brynleigh Wagner's Roommate",
+                    "id": "oly0lm_1"
+                },
+                {
+                    "name": "Colette Hickman",
+                    "id": "xmr1ex"
+                },
+                {
+                    "name": "Harlow Nolan",
+                    "id": "nty0pq"
+                }
+            ]
+        },
+        {
+            "groupID": 85,
+            "overallCompatibility": 87.62,
+            "compatibilityScores": [
+                63.81,
+                100,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Ellianna Hensley",
+                    "id": "nct8ug"
+                },
+                {
+                    "name": "Ellianna Hensley's Roommate",
+                    "id": "nct8ug_1"
+                },
+                {
+                    "name": "Jamie Carrillo",
+                    "id": "qat5bx"
+                },
+                {
+                    "name": "Alia Frazier",
+                    "id": "nax0nk"
+                }
+            ]
+        },
+        {
+            "groupID": 86,
+            "overallCompatibility": 84.29,
+            "compatibilityScores": [
+                85.71,
+                83.81,
+                82.86
+            ],
+            "students": [
+                {
+                    "name": "Estella Heath",
+                    "id": "swi3xc"
+                },
+                {
+                    "name": "Poppy Norris",
+                    "id": "pbr7uu"
+                },
+                {
+                    "name": "Leona Franklin",
+                    "id": "qyh2ml"
+                },
+                {
+                    "name": "Marie Alfaro",
+                    "id": "ebh2sd"
+                }
+            ]
+        },
+        {
+            "groupID": 87,
+            "overallCompatibility": 87.62,
+            "compatibilityScores": [
+                86.67,
+                85.71,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Alia Berger",
+                    "id": "qty8ib"
+                },
+                {
+                    "name": "Briana Cunningham",
+                    "id": "kfp0sf"
+                },
+                {
+                    "name": "Kamryn Dorsey",
+                    "id": "hnz6uz"
+                },
+                {
+                    "name": "Averi Holloway",
+                    "id": "vjv4rq"
+                }
+            ]
+        },
+        {
+            "groupID": 88,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                91.43,
+                76.19,
+                79.05
+            ],
+            "students": [
+                {
+                    "name": "Jazmin Franklin",
+                    "id": "tua9jg"
+                },
+                {
+                    "name": "Khaleesi Best",
+                    "id": "mdv8kf"
+                },
+                {
+                    "name": "Anastasia Conley",
+                    "id": "vvd1oh"
+                },
+                {
+                    "name": "Amaia Miller",
+                    "id": "ycz1xb"
+                }
+            ]
+        },
+        {
+            "groupID": 89,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                73.33,
+                85.71,
+                92.38
+            ],
+            "students": [
+                {
+                    "name": "Theodora Herrera",
+                    "id": "obo2kl"
+                },
+                {
+                    "name": "Journee Strong",
+                    "id": "wvr9ea"
+                },
+                {
+                    "name": "Ellianna Anthony",
+                    "id": "xcz8kv"
+                },
+                {
+                    "name": "Iyla Stewart",
+                    "id": "ztg1pn"
+                }
+            ]
+        },
+        {
+            "groupID": 90,
+            "overallCompatibility": 84.13,
+            "compatibilityScores": [
+                61.9,
+                100,
+                80.95
+            ],
+            "students": [
+                {
+                    "name": "Edith Hawkins",
+                    "id": "fux3vs"
+                },
+                {
+                    "name": "Edith Hawkins's Roommate",
+                    "id": "fux3vs_1"
+                },
+                {
+                    "name": "Mariam Bernal",
+                    "id": "ueg5yo"
+                },
+                {
+                    "name": "Gabrielle Dixon",
+                    "id": "xsv1it"
+                }
+            ]
+        },
+        {
+            "groupID": 91,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                50.48,
+                100
+            ],
+            "students": [
+                {
+                    "name": "Liliana May",
+                    "id": "gmx7cn"
+                },
+                {
+                    "name": "Marilyn Chen",
+                    "id": "juw9cq"
+                },
+                {
+                    "name": "Marilyn Chen's Roommate",
+                    "id": "juw9cq_1"
+                },
+                {
+                    "name": "Marilyn Chen's Roommate",
+                    "id": "juw9cq_2"
+                }
+            ]
+        },
+        {
+            "groupID": 92,
+            "overallCompatibility": 79.21,
+            "compatibilityScores": [
+                80,
+                73.33,
+                86.67
+            ],
+            "students": [
+                {
+                    "name": "Giselle Vaughan",
+                    "id": "eqj9bo"
+                },
+                {
+                    "name": "Amaya Jenkins",
+                    "id": "vgv8el"
+                },
+                {
+                    "name": "Maria Barajas",
+                    "id": "zun9pz"
+                },
+                {
+                    "name": "Paola Wheeler",
+                    "id": "vnq8pt"
+                }
+            ]
+        },
+        {
+            "groupID": 93,
+            "overallCompatibility": 81.9,
+            "compatibilityScores": [
+                80,
+                88.57,
+                92.38
+            ],
+            "students": [
+                {
+                    "name": "Kailey Mayo",
+                    "id": "ugx3kq"
+                },
+                {
+                    "name": "Melany Singleton",
+                    "id": "naq4dr"
+                },
+                {
+                    "name": "Payton Clayton",
+                    "id": "iop3pu"
+                },
+                {
+                    "name": "Elsa Kramer",
+                    "id": "ipe2zr"
+                }
+            ]
+        },
+        {
+            "groupID": 94,
+            "overallCompatibility": 89.37,
+            "compatibilityScores": [
+                89.52,
+                85.71,
+                85.71
+            ],
+            "students": [
+                {
+                    "name": "Sloan Heath",
+                    "id": "zgh6qg"
+                },
+                {
+                    "name": "Nathalia Glenn",
+                    "id": "iij2kb"
+                },
+                {
+                    "name": "Veda Christian",
+                    "id": "blv4uc"
+                },
+                {
+                    "name": "Finley Villalobos",
+                    "id": "fbz4ci"
+                }
+            ]
+        },
+        {
+            "groupID": 95,
+            "overallCompatibility": 78.41,
+            "compatibilityScores": [
+                72.38,
+                82.86,
+                69.52
+            ],
+            "students": [
+                {
+                    "name": "Trinity Newman",
+                    "id": "grf2xn"
+                },
+                {
+                    "name": "Autumn Lloyd",
+                    "id": "udw8hb"
+                },
+                {
+                    "name": "Piper Peterson",
+                    "id": "zxd4ea"
+                },
+                {
+                    "name": "Piper Peterson's Roommate",
+                    "id": "zxd4ea_1"
+                }
+            ]
+        },
+        {
+            "groupID": 96,
+            "overallCompatibility": 76.67,
+            "compatibilityScores": [
+                86.67,
+                84.76,
+                74.29
+            ],
+            "students": [
+                {
+                    "name": "Jovie Wang",
+                    "id": "rqw3ud"
+                },
+                {
+                    "name": "Aurora Barker",
+                    "id": "lnd7gs"
+                },
+                {
+                    "name": "Dahlia Valdez",
+                    "id": "xdi5ne"
+                },
+                {
+                    "name": "Journee Blevins",
+                    "id": "cqw5mc"
+                }
+            ]
+        },
+        {
+            "groupID": 97,
+            "overallCompatibility": 94.29,
+            "compatibilityScores": [
+                94.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Zeke Fields",
+                    "id": "png8ly"
+                },
+                {
+                    "name": "Lachlan Sheppard",
+                    "id": "par0gf"
+                }
+            ]
+        },
+        {
+            "groupID": 98,
+            "overallCompatibility": 97.14,
+            "compatibilityScores": [
+                97.14,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Baker Walters",
+                    "id": "ypl4jr"
+                },
+                {
+                    "name": "Santino Massey",
+                    "id": "wtg3eb"
+                }
+            ]
+        },
+        {
+            "groupID": 99,
+            "overallCompatibility": 76.19,
+            "compatibilityScores": [
+                76.19,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Robin Lozano",
+                    "id": "cwl2jg"
+                },
+                {
+                    "name": "Dillon Hurley",
+                    "id": "nlk0rv"
+                }
+            ]
+        },
+        {
+            "groupID": 100,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Roman Moody",
+                    "id": "nui7zi"
+                },
+                {
+                    "name": "Daxton Nicholson",
+                    "id": "fwa2wh"
+                }
+            ]
+        },
+        {
+            "groupID": 101,
+            "overallCompatibility": 70.48,
+            "compatibilityScores": [
+                70.48,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Miles Moses",
+                    "id": "tfl6su"
+                },
+                {
+                    "name": "Randy White",
+                    "id": "jyv1gf"
+                }
+            ]
+        },
+        {
+            "groupID": 102,
+            "overallCompatibility": 73.33,
+            "compatibilityScores": [
+                73.33,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kendrick Preston",
+                    "id": "bvc2fo"
+                },
+                {
+                    "name": "Erick Ryan",
+                    "id": "tws4jl"
+                }
+            ]
+        },
+        {
+            "groupID": 103,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Lucca Warren",
+                    "id": "khu3pr"
+                },
+                {
+                    "name": "Cedric Hampton",
+                    "id": "kio8sh"
+                }
+            ]
+        },
+        {
+            "groupID": 104,
+            "overallCompatibility": 88.57,
+            "compatibilityScores": [
+                88.57,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kashton Maddox",
+                    "id": "dpp2az"
+                },
+                {
+                    "name": "Ledger Leonard",
+                    "id": "njj2kw"
+                }
+            ]
+        },
+        {
+            "groupID": 105,
+            "overallCompatibility": 78.1,
+            "compatibilityScores": [
+                78.1,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Lawrence Jacobson",
+                    "id": "suf0yz"
+                },
+                {
+                    "name": "Dariel Vargas",
+                    "id": "lpa7ov"
+                }
+            ]
+        },
+        {
+            "groupID": 106,
+            "overallCompatibility": 73.33,
+            "compatibilityScores": [
+                73.33,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kelvin Proctor",
+                    "id": "ecp7hj"
+                },
+                {
+                    "name": "Russell Steele",
+                    "id": "chg7np"
+                }
+            ]
+        },
+        {
+            "groupID": 107,
+            "overallCompatibility": 87.62,
+            "compatibilityScores": [
+                87.62,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Arjun Snyder",
+                    "id": "fuu1cb"
+                },
+                {
+                    "name": "Emir Frazier",
+                    "id": "lqn3bz"
+                }
+            ]
+        },
+        {
+            "groupID": 108,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Aaron Fields",
+                    "id": "krd4ez"
+                },
+                {
+                    "name": "Bode Newman",
+                    "id": "nvh8ob"
+                }
+            ]
+        },
+        {
+            "groupID": 109,
+            "overallCompatibility": 89.52,
+            "compatibilityScores": [
+                89.52,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Caspian Mullen",
+                    "id": "kbc5us"
+                },
+                {
+                    "name": "Adrian Green",
+                    "id": "kkr2wa"
+                }
+            ]
+        },
+        {
+            "groupID": 110,
+            "overallCompatibility": 78.1,
+            "compatibilityScores": [
+                78.1,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Bryson Mueller",
+                    "id": "rif5mv"
+                },
+                {
+                    "name": "Reid Lowe",
+                    "id": "ltt6iz"
+                }
+            ]
+        },
+        {
+            "groupID": 111,
+            "overallCompatibility": 91.43,
+            "compatibilityScores": [
+                91.43,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Tucker Pierce",
+                    "id": "pll9vd"
+                },
+                {
+                    "name": "Jackson Liu",
+                    "id": "eqp4bv"
+                }
+            ]
+        },
+        {
+            "groupID": 112,
+            "overallCompatibility": 89.52,
+            "compatibilityScores": [
+                89.52,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Neil Cooper",
+                    "id": "goh4tx"
+                },
+                {
+                    "name": "Donald Welch",
+                    "id": "aox3bl"
+                }
+            ]
+        },
+        {
+            "groupID": 113,
+            "overallCompatibility": 77.14,
+            "compatibilityScores": [
+                77.14,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Dexter Marsh",
+                    "id": "gar0ho"
+                },
+                {
+                    "name": "Mohammed Dickerson",
+                    "id": "ten0cu"
+                }
+            ]
+        },
+        {
+            "groupID": 114,
+            "overallCompatibility": 75.24,
+            "compatibilityScores": [
+                75.24,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Uriel Rojas",
+                    "id": "gvv3ae"
+                },
+                {
+                    "name": "Jaxxon Pitts",
+                    "id": "kao8aj"
+                }
+            ]
+        },
+        {
+            "groupID": 115,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                79.05,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kaden Ramirez",
+                    "id": "wlg8gf"
+                },
+                {
+                    "name": "Gordon Rivera",
+                    "id": "ieu1op"
+                }
+            ]
+        },
+        {
+            "groupID": 116,
+            "overallCompatibility": 83.81,
+            "compatibilityScores": [
+                83.81,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Hudson Jefferson",
+                    "id": "oxr7tt"
+                },
+                {
+                    "name": "Lance Schneider",
+                    "id": "swc5uq"
+                }
+            ]
+        },
+        {
+            "groupID": 117,
+            "overallCompatibility": 73.33,
+            "compatibilityScores": [
+                73.33,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Colby English",
+                    "id": "xtl3co"
+                },
+                {
+                    "name": "Brett Nolan",
+                    "id": "erb9oy"
+                }
+            ]
+        },
+        {
+            "groupID": 118,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Zakai Galvan",
+                    "id": "tas7mf"
+                },
+                {
+                    "name": "Orion Brady",
+                    "id": "sox4hy"
+                }
+            ]
+        },
+        {
+            "groupID": 119,
+            "overallCompatibility": 88.57,
+            "compatibilityScores": [
+                88.57,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Saint Maxwell",
+                    "id": "lzt0qo"
+                },
+                {
+                    "name": "Mitchell Riley",
+                    "id": "fxa6se"
+                }
+            ]
+        },
+        {
+            "groupID": 120,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Rafael Newman",
+                    "id": "uvd7vt"
+                },
+                {
+                    "name": "Zayd Howard",
+                    "id": "cgv5hp"
+                }
+            ]
+        },
+        {
+            "groupID": 121,
+            "overallCompatibility": 94.29,
+            "compatibilityScores": [
+                94.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Jonathan Cameron",
+                    "id": "rai6no"
+                },
+                {
+                    "name": "Wes Duarte",
+                    "id": "ywp0rx"
+                }
+            ]
+        },
+        {
+            "groupID": 122,
+            "overallCompatibility": 82.86,
+            "compatibilityScores": [
+                82.86,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Zakai West",
+                    "id": "qmu5bt"
+                },
+                {
+                    "name": "Stetson Trujillo",
+                    "id": "wce8hy"
+                }
+            ]
+        },
+        {
+            "groupID": 123,
+            "overallCompatibility": 97.14,
+            "compatibilityScores": [
+                97.14,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Jacob Melendez",
+                    "id": "fxe4hv"
+                },
+                {
+                    "name": "Ray Tucker",
+                    "id": "pzw4ti"
+                }
+            ]
+        },
+        {
+            "groupID": 124,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Brady Hall",
+                    "id": "vjm1dt"
+                },
+                {
+                    "name": "Yusuf McDaniel",
+                    "id": "ojx6ox"
+                }
+            ]
+        },
+        {
+            "groupID": 125,
+            "overallCompatibility": 98.1,
+            "compatibilityScores": [
+                98.1,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Edgar Salgado",
+                    "id": "viu2le"
+                },
+                {
+                    "name": "Denver Richmond",
+                    "id": "xwl4jf"
+                }
+            ]
+        },
+        {
+            "groupID": 126,
+            "overallCompatibility": 90.48,
+            "compatibilityScores": [
+                90.48,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Tucker Pierce",
+                    "id": "vys9of"
+                },
+                {
+                    "name": "Cullen Wright",
+                    "id": "qel9xt"
+                }
+            ]
+        },
+        {
+            "groupID": 127,
+            "overallCompatibility": 89.52,
+            "compatibilityScores": [
+                89.52,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kiaan Briggs",
+                    "id": "jic6eh"
+                },
+                {
+                    "name": "Byron Hood",
+                    "id": "qmz9cv"
+                }
+            ]
+        },
+        {
+            "groupID": 128,
+            "overallCompatibility": 91.43,
+            "compatibilityScores": [
+                91.43,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Alejandro O\u2019Neal",
+                    "id": "iqd1uh"
+                },
+                {
+                    "name": "Jon Jones",
+                    "id": "fwg4pb"
+                }
+            ]
+        },
+        {
+            "groupID": 129,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Alvaro Montoya",
+                    "id": "sxl7jo"
+                },
+                {
+                    "name": "Enoch Page",
+                    "id": "inc5jr"
+                }
+            ]
+        },
+        {
+            "groupID": 130,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                80.95,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kellen Pearson",
+                    "id": "nwj6ce"
+                },
+                {
+                    "name": "Iker Lester",
+                    "id": "zan6ck"
+                }
+            ]
+        },
+        {
+            "groupID": 131,
+            "overallCompatibility": 88.57,
+            "compatibilityScores": [
+                88.57,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Sutton Monroe",
+                    "id": "ixz9rl"
+                },
+                {
+                    "name": "Holden Olson",
+                    "id": "shn2fs"
+                }
+            ]
+        },
+        {
+            "groupID": 132,
+            "overallCompatibility": 90.48,
+            "compatibilityScores": [
+                90.48,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Xavier Atkinson",
+                    "id": "thf0iw"
+                },
+                {
+                    "name": "Simon Friedman",
+                    "id": "hse6qo"
+                }
+            ]
+        },
+        {
+            "groupID": 133,
+            "overallCompatibility": 73.33,
+            "compatibilityScores": [
+                73.33,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Jamie Espinosa",
+                    "id": "iho1dp"
+                },
+                {
+                    "name": "Walter Stephenson",
+                    "id": "xpg5me"
+                }
+            ]
+        },
+        {
+            "groupID": 134,
+            "overallCompatibility": 86.67,
+            "compatibilityScores": [
+                86.67,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Finley Xiong",
+                    "id": "tup2jc"
+                },
+                {
+                    "name": "Hank Eaton",
+                    "id": "veu3yx"
+                }
+            ]
+        },
+        {
+            "groupID": 135,
+            "overallCompatibility": 86.67,
+            "compatibilityScores": [
+                86.67,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Khari Stewart",
+                    "id": "fcm3vb"
+                },
+                {
+                    "name": "Kylen Wilkerson",
+                    "id": "pxi9he"
+                }
+            ]
+        },
+        {
+            "groupID": 136,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Madden Bruce",
+                    "id": "ksc9qk"
+                },
+                {
+                    "name": "Emmanuel Robbins",
+                    "id": "ofo2uw"
+                }
+            ]
+        },
+        {
+            "groupID": 137,
+            "overallCompatibility": 83.81,
+            "compatibilityScores": [
+                83.81,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Korbyn Morgan",
+                    "id": "dau1dx"
+                },
+                {
+                    "name": "Demetrius Andrade",
+                    "id": "omt3jr"
+                }
+            ]
+        },
+        {
+            "groupID": 138,
+            "overallCompatibility": 94.29,
+            "compatibilityScores": [
+                94.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Rio Higgins",
+                    "id": "zqp9oy"
+                },
+                {
+                    "name": "Ahmir Shepard",
+                    "id": "uqq6no"
+                }
+            ]
+        },
+        {
+            "groupID": 139,
+            "overallCompatibility": 75.24,
+            "compatibilityScores": [
+                75.24,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Bellamy Owens",
+                    "id": "xjj6vr"
+                },
+                {
+                    "name": "Abner Cortes",
+                    "id": "iwj9vs"
+                }
+            ]
+        },
+        {
+            "groupID": 140,
+            "overallCompatibility": 95.24,
+            "compatibilityScores": [
+                95.24,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Joe Abbott",
+                    "id": "fpw4gv"
+                },
+                {
+                    "name": "Bryce Arnold",
+                    "id": "vjm4wm"
+                }
+            ]
+        },
+        {
+            "groupID": 141,
+            "overallCompatibility": 81.9,
+            "compatibilityScores": [
+                81.9,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Cash Correa",
+                    "id": "zry9vd"
+                },
+                {
+                    "name": "Harry Schmitt",
+                    "id": "new2lw"
+                }
+            ]
+        },
+        {
+            "groupID": 142,
+            "overallCompatibility": 71.43,
+            "compatibilityScores": [
+                71.43,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Meghan Boyer",
+                    "id": "sxg2hj"
+                },
+                {
+                    "name": "Annie McDowell",
+                    "id": "hrf5ec"
+                }
+            ]
+        },
+        {
+            "groupID": 143,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Veda Knight",
+                    "id": "wce8qy"
+                },
+                {
+                    "name": "Frankie Hartman",
+                    "id": "vac3mu"
+                }
+            ]
+        },
+        {
+            "groupID": 144,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                80.95,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Samara Brady",
+                    "id": "shb0lm"
+                },
+                {
+                    "name": "Magnolia Newton",
+                    "id": "jyw8pd"
+                }
+            ]
+        },
+        {
+            "groupID": 145,
+            "overallCompatibility": 74.29,
+            "compatibilityScores": [
+                74.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Clementine Boyle",
+                    "id": "efy3aa"
+                },
+                {
+                    "name": "Cecelia Zavala",
+                    "id": "giy9cl"
+                }
+            ]
+        },
+        {
+            "groupID": 146,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Elaine Spears",
+                    "id": "ufe4yc"
+                },
+                {
+                    "name": "Justice Collins",
+                    "id": "dal7zj"
+                }
+            ]
+        },
+        {
+            "groupID": 147,
+            "overallCompatibility": 69.52,
+            "compatibilityScores": [
+                69.52,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Karter Carson",
+                    "id": "luv8jr"
+                },
+                {
+                    "name": "Layla Khan",
+                    "id": "han8gm"
+                }
+            ]
+        },
+        {
+            "groupID": 148,
+            "overallCompatibility": 82.86,
+            "compatibilityScores": [
+                82.86,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Summer Potter",
+                    "id": "trn1ul"
+                },
+                {
+                    "name": "Presley Leal",
+                    "id": "sgm8ob"
+                }
+            ]
+        },
+        {
+            "groupID": 149,
+            "overallCompatibility": 88.57,
+            "compatibilityScores": [
+                88.57,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Leona Pruitt",
+                    "id": "amz2jb"
+                },
+                {
+                    "name": "Addilyn Doyle",
+                    "id": "ukk2ip"
+                }
+            ]
+        },
+        {
+            "groupID": 150,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Amira Christian",
+                    "id": "say2iu"
+                },
+                {
+                    "name": "Demi Rowland",
+                    "id": "qqz4sy"
+                }
+            ]
+        },
+        {
+            "groupID": 151,
+            "overallCompatibility": 76.19,
+            "compatibilityScores": [
+                76.19,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Gabriella Hess",
+                    "id": "gkg3gc"
+                },
+                {
+                    "name": "Royal Galvan",
+                    "id": "bjg4gd"
+                }
+            ]
+        },
+        {
+            "groupID": 152,
+            "overallCompatibility": 75.24,
+            "compatibilityScores": [
+                75.24,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Andrea Quintana",
+                    "id": "eem8pj"
+                },
+                {
+                    "name": "Chandler Pham",
+                    "id": "qfz4ov"
+                }
+            ]
+        },
+        {
+            "groupID": 153,
+            "overallCompatibility": 81.9,
+            "compatibilityScores": [
+                81.9,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Callie Sosa",
+                    "id": "ulo3fr"
+                },
+                {
+                    "name": "Octavia Morales",
+                    "id": "ckq5jc"
+                }
+            ]
+        },
+        {
+            "groupID": 154,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                79.05,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Annie Morse",
+                    "id": "lih5cy"
+                },
+                {
+                    "name": "Oaklynn Roach",
+                    "id": "bnj7at"
+                }
+            ]
+        },
+        {
+            "groupID": 155,
+            "overallCompatibility": 75.24,
+            "compatibilityScores": [
+                75.24,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Virginia Romero",
+                    "id": "xka3tf"
+                },
+                {
+                    "name": "Imani Navarro",
+                    "id": "bij5az"
+                }
+            ]
+        },
+        {
+            "groupID": 156,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Amari Weaver",
+                    "id": "yjp3pr"
+                },
+                {
+                    "name": "Arabella Taylor",
+                    "id": "nzq2pi"
+                }
+            ]
+        },
+        {
+            "groupID": 157,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                79.05,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kate Hurst",
+                    "id": "vgl5lm"
+                },
+                {
+                    "name": "Serenity Massey",
+                    "id": "uca6er"
+                }
+            ]
+        },
+        {
+            "groupID": 158,
+            "overallCompatibility": 76.19,
+            "compatibilityScores": [
+                76.19,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Amira Shaffer",
+                    "id": "sjc5fk"
+                },
+                {
+                    "name": "Adelina Vo",
+                    "id": "bnl0ud"
+                }
+            ]
+        },
+        {
+            "groupID": 159,
+            "overallCompatibility": 91.43,
+            "compatibilityScores": [
+                91.43,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Opal Hines",
+                    "id": "bmx6jy"
+                },
+                {
+                    "name": "Adaline Lowery",
+                    "id": "ooz1vk"
+                }
+            ]
+        },
+        {
+            "groupID": 160,
+            "overallCompatibility": 90.48,
+            "compatibilityScores": [
+                90.48,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Nala Dominguez",
+                    "id": "oie7qf"
+                },
+                {
+                    "name": "Grace Vo",
+                    "id": "lyx4zs"
+                }
+            ]
+        },
+        {
+            "groupID": 161,
+            "overallCompatibility": 91.43,
+            "compatibilityScores": [
+                91.43,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Lillian Adams",
+                    "id": "ret9gc"
+                },
+                {
+                    "name": "Amanda Murillo",
+                    "id": "bek5wl"
+                }
+            ]
+        },
+        {
+            "groupID": 162,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Delaney Monroe",
+                    "id": "cfk9rg"
+                },
+                {
+                    "name": "Kelly Dougherty",
+                    "id": "zds8lq"
+                }
+            ]
+        },
+        {
+            "groupID": 163,
+            "overallCompatibility": 82.86,
+            "compatibilityScores": [
+                82.86,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Itzayana Bernard",
+                    "id": "xwk6lh"
+                },
+                {
+                    "name": "Dallas Chambers",
+                    "id": "ohc5kc"
+                }
+            ]
+        },
+        {
+            "groupID": 164,
+            "overallCompatibility": 82.86,
+            "compatibilityScores": [
+                82.86,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Ryan Rangel",
+                    "id": "lsy9pa"
+                },
+                {
+                    "name": "Kyla Diaz",
+                    "id": "fmx6yw"
+                }
+            ]
+        },
+        {
+            "groupID": 165,
+            "overallCompatibility": 88.57,
+            "compatibilityScores": [
+                88.57,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kayla Larson",
+                    "id": "vdl7ia"
+                },
+                {
+                    "name": "Oaklynn Whitehead",
+                    "id": "bqj3wh"
+                }
+            ]
+        },
+        {
+            "groupID": 166,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Sophie Cooper",
+                    "id": "lxh8sk"
+                },
+                {
+                    "name": "Parker Rollins",
+                    "id": "zoj6wq"
+                }
+            ]
+        },
+        {
+            "groupID": 167,
+            "overallCompatibility": 90.48,
+            "compatibilityScores": [
+                90.48,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kynlee Morrison",
+                    "id": "luo7oy"
+                },
+                {
+                    "name": "Sienna Bates",
+                    "id": "jfs3bi"
+                }
+            ]
+        },
+        {
+            "groupID": 168,
+            "overallCompatibility": 86.67,
+            "compatibilityScores": [
+                86.67,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Everlee Floyd",
+                    "id": "uzz7vd"
+                },
+                {
+                    "name": "Sage Correa",
+                    "id": "awq6yw"
+                }
+            ]
+        },
+        {
+            "groupID": 169,
+            "overallCompatibility": 87.62,
+            "compatibilityScores": [
+                87.62,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Remi Clarke",
+                    "id": "npu8jm"
+                },
+                {
+                    "name": "Bethany Mata",
+                    "id": "kua3eh"
+                }
+            ]
+        },
+        {
+            "groupID": 170,
+            "overallCompatibility": 92.38,
+            "compatibilityScores": [
+                92.38,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Esther Horn",
+                    "id": "ubn1py"
+                },
+                {
+                    "name": "Annie Hampton",
+                    "id": "djm4nh"
+                }
+            ]
+        },
+        {
+            "groupID": 171,
+            "overallCompatibility": 83.81,
+            "compatibilityScores": [
+                83.81,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Leah Wilkins",
+                    "id": "ajb4ar"
+                },
+                {
+                    "name": "Dahlia Salinas",
+                    "id": "log9qi"
+                }
+            ]
+        },
+        {
+            "groupID": 172,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Addisyn McBride",
+                    "id": "ezi4zg"
+                },
+                {
+                    "name": "Whitney Weaver",
+                    "id": "ntn3lf"
+                }
+            ]
+        },
+        {
+            "groupID": 173,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                79.05,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Arabella Hinton",
+                    "id": "kja1ec"
+                },
+                {
+                    "name": "Everlee Cline",
+                    "id": "neg3os"
+                }
+            ]
+        },
+        {
+            "groupID": 174,
+            "overallCompatibility": 82.86,
+            "compatibilityScores": [
+                82.86,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Lily McCall",
+                    "id": "lxu8lr"
+                },
+                {
+                    "name": "Treasure Buck",
+                    "id": "pel6ci"
+                }
+            ]
+        },
+        {
+            "groupID": 175,
+            "overallCompatibility": 82.86,
+            "compatibilityScores": [
+                82.86,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Sophia Reilly",
+                    "id": "jko6uc"
+                },
+                {
+                    "name": "Cataleya Durham",
+                    "id": "lom5ak"
+                }
+            ]
+        },
+        {
+            "groupID": 176,
+            "overallCompatibility": 73.33,
+            "compatibilityScores": [
+                73.33,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Kiara Dawson",
+                    "id": "dfm0vw"
+                },
+                {
+                    "name": "Carly Richards",
+                    "id": "qym3ov"
+                }
+            ]
+        },
+        {
+            "groupID": 177,
+            "overallCompatibility": 84.76,
+            "compatibilityScores": [
+                84.76,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Isabel Alvarez",
+                    "id": "uot7uy"
+                },
+                {
+                    "name": "Aspyn Russo",
+                    "id": "qxd1sv"
+                }
+            ]
+        },
+        {
+            "groupID": 178,
+            "overallCompatibility": 74.29,
+            "compatibilityScores": [
+                74.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Braylee Wong",
+                    "id": "fxk8vg"
+                },
+                {
+                    "name": "Amayah Hampton",
+                    "id": "rhp0cg"
+                }
+            ]
+        },
+        {
+            "groupID": 179,
+            "overallCompatibility": 94.29,
+            "compatibilityScores": [
+                94.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Miley Fischer",
+                    "id": "mqd4un"
+                },
+                {
+                    "name": "Guadalupe Choi",
+                    "id": "rek2il"
+                }
+            ]
+        },
+        {
+            "groupID": 180,
+            "overallCompatibility": 91.43,
+            "compatibilityScores": [
+                91.43,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Maya Ashley",
+                    "id": "ekn5rg"
+                },
+                {
+                    "name": "Janiyah Sellers",
+                    "id": "usy9bd"
+                }
+            ]
+        },
+        {
+            "groupID": 181,
+            "overallCompatibility": 86.67,
+            "compatibilityScores": [
+                86.67,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Stevie McLaughlin",
+                    "id": "jio5ya"
+                },
+                {
+                    "name": "Autumn Hendrix",
+                    "id": "wpj8vo"
+                }
+            ]
+        },
+        {
+            "groupID": 182,
+            "overallCompatibility": 85.71,
+            "compatibilityScores": [
+                85.71,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Delilah Munoz",
+                    "id": "zww1ik"
+                },
+                {
+                    "name": "Dulce Tanner",
+                    "id": "tiu1pf"
+                }
+            ]
+        },
+        {
+            "groupID": 183,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                79.05,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Amber Valentine",
+                    "id": "dkr3gt"
+                },
+                {
+                    "name": "Emmy Dejesus",
+                    "id": "viq4zx"
+                }
+            ]
+        },
+        {
+            "groupID": 184,
+            "overallCompatibility": 79.05,
+            "compatibilityScores": [
+                79.05,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Leighton Moyer",
+                    "id": "ffb7ju"
+                },
+                {
+                    "name": "Noor Henson",
+                    "id": "ozb8so"
+                }
+            ]
+        },
+        {
+            "groupID": 185,
+            "overallCompatibility": 96.19,
+            "compatibilityScores": [
+                96.19,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Elsa Compton",
+                    "id": "cqt4xj"
+                },
+                {
+                    "name": "Lea Leblanc",
+                    "id": "rvi9hw"
+                }
+            ]
+        },
+        {
+            "groupID": 186,
+            "overallCompatibility": 74.29,
+            "compatibilityScores": [
+                74.29,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Valeria Skinner",
+                    "id": "pkn4vf"
+                },
+                {
+                    "name": "Talia Stephenson",
+                    "id": "dpl3kv"
+                }
+            ]
+        },
+        {
+            "groupID": 187,
+            "overallCompatibility": 90.48,
+            "compatibilityScores": [
+                90.48,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Melany Guerrero",
+                    "id": "jhp9qe"
+                },
+                {
+                    "name": "Chanel Avalos",
+                    "id": "fti4db"
+                }
+            ]
+        },
+        {
+            "groupID": 188,
+            "overallCompatibility": 95.24,
+            "compatibilityScores": [
+                95.24,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Valery Barnes",
+                    "id": "wpu5fb"
+                },
+                {
+                    "name": "Mckenna Ahmed",
+                    "id": "bwh8hg"
+                }
+            ]
+        },
+        {
+            "groupID": 189,
+            "overallCompatibility": 89.52,
+            "compatibilityScores": [
+                89.52,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Coen Calhoun",
+                    "id": "lre2mv"
+                },
+                {
+                    "name": "Damian Howell",
+                    "id": "jyx6wl"
+                }
+            ]
+        },
+        {
+            "groupID": 190,
+            "overallCompatibility": 73.33,
+            "compatibilityScores": [
+                73.33,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Delilah Adkins",
+                    "id": "ptg9pm"
+                },
+                {
+                    "name": "Thalia Jensen",
+                    "id": "aji0ez"
                 }
             ]
         }
     ],
-    "oddMenOut": [
-        {
-            "reason": "No compatible match or backup found",
-            "gender": "Male",
-            "name": "Mike Lee",
-            "id": "ml5ee"
-        },
-        {
-            "reason": "No compatible match or backup found",
-            "gender": "Female",
-            "name": "Tina Liu",
-            "id": "tl5ee"
-        }
-    ]
+    "oddMenOut": [{
+        "reason": "No compatible match or backup found",
+        "gender": "Female",
+        "name": "Henley O\u2019Connell",
+        "id": "cfw7ag"
+    }]
 }

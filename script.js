@@ -5,7 +5,7 @@ async function findGroup() {
 
     try {
         // Add cache busting to always fetch the latest version
-        const response = await fetch(`final_matches.json?cacheBust=${Date.now()}`);
+        const response = await fetch(`matches.json?cacheBust=${Date.now()}`);
         const data = await response.json();
 
         // Check if the student is in the odd-men-out list
