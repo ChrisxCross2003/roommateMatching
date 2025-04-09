@@ -3,35 +3,19 @@ async function findGroup() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = ''; // Clear previous results
 
-    const countDiv = document.getElementById('count'); // New div for showing match stats
-    countDiv.innerHTML = ''; // Clear previous stats
-
     try {
-        // Load the matches JSON
-        const response = await fetch('matches.json');
+        // Add cache busting to always fetch the latest version
+        const response = await fetch(`final_matches.json?cacheBust=${Date.now()}`);
         const data = await response.json();
 
-        // Check the number of successful matches and odd-men-out
-        const oddMenOutCount = data.oddMenOut.length;
-        const successfulMatchesCount = data.groupResults.reduce((acc, group) => {
-            // Count groups with at least 2 students (successful matches)
-            if (group.students.length >= 2) {
-                acc++;
-            }
-            return acc;
-        }, 0);
-
-        // Display the stats below the "Find My Group" button
-        countDiv.innerHTML = `${successfulMatchesCount} successful matches, ${oddMenOutCount} odd-men-out`;
-
         // Check if the student is in the odd-men-out list
-        const oddManOut = data.oddMenOut.find(student =>
+        const oddManOut = (data.oddMenOut || []).find(student =>
             student.id.toLowerCase() === inputId
         );
 
         if (oddManOut) {
             resultDiv.innerHTML = `
-                <p style="color:red;">We're so sorry! You're an Odd Man Out :(. We could not find any compatible matches, but we will work hard to match you in the next phase!</p>
+                <p style="color:red;">We're so sorry, but you are an Odd-Man-Out :(. We could not find any compatible matches, but you have first priority in the next matching phase!</p>
             `;
             return;
         }
