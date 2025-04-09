@@ -2,12 +2,75 @@ package com.example.roommatematching;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
 public class Export {
+
+    public static void exportGroupsToJson(List<Group> groups, List<Student> oddMenOut, String filePath) {
+        try {
+            JSONObject exportData = new JSONObject();
+
+            // Export Group Results
+            JSONArray groupResults = new JSONArray();
+            for (Group group : groups) {
+                JSONObject groupData = new JSONObject();
+                groupData.put("groupID", group.getGroupID());
+
+                JSONArray students = new JSONArray();
+                for (Student student : group.getActualStudents()) {
+                    JSONObject studentData = new JSONObject();
+                    studentData.put("id", student.getID() != null ? student.getID() : "N/A");
+                    studentData.put("name", student.getName() != null ? student.getName() : "N/A");
+                    students.put(studentData);
+                }
+                groupData.put("students", students);
+
+                // Compatibility scores
+                JSONArray compatibilityScores = new JSONArray();
+                groupData.put("overallCompatibility", roundToTwoDecimals(calculateOverallCompatibility(group.getActualStudents())));
+
+                for (int i = 0; i < 3; i++) {
+                    if (i + 1 < group.getActualStudents().size()) {
+                        double score = calculateCompatibilityScore(group.getActualStudents().get(i), group.getActualStudents().get(i + 1));
+                        compatibilityScores.put(roundToTwoDecimals(score));
+                    } else {
+                        compatibilityScores.put("N/A");
+                    }
+                }
+                groupData.put("compatibilityScores", compatibilityScores);
+
+                groupResults.put(groupData);
+            }
+            exportData.put("groupResults", groupResults);
+
+            // Export Odd Men Out
+            JSONArray oddMenOutData = new JSONArray();
+            for (Student student : oddMenOut) {
+                JSONObject studentData = new JSONObject();
+                studentData.put("id", student.getID());
+                studentData.put("name", student.getName());
+                studentData.put("gender", student.getGender());
+                studentData.put("reason", "No compatible match or backup found");
+
+                oddMenOutData.put(studentData);
+            }
+            exportData.put("oddMenOut", oddMenOutData);
+
+            // Write JSON to file
+            try (FileOutputStream fos = new FileOutputStream(filePath)) {
+                fos.write(exportData.toString(4).getBytes());
+                System.out.println("✅ JSON export complete: " + filePath);
+            }
+        } catch (IOException e) {
+            System.err.println("❌ Failed to write JSON file: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 
     public static void exportGroupsToExcel(List<Group> groups, List<Student> oddMenOut, String filePath) {
         Workbook workbook = new XSSFWorkbook();
@@ -101,6 +164,7 @@ public class Export {
             }
         }
     }
+
 
     private static void writeOddMenOutSheet(Workbook workbook, List<Student> oddMenOut) {
         Sheet sheet = workbook.createSheet("Odd Men Out");

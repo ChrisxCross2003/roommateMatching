@@ -68,6 +68,7 @@ public class StableMatching {
         totalOddMenOut.addAll(maleOddMenOut);
         totalOddMenOut.addAll(femaleOddMenOut);
         Export.exportGroupsToExcel(allGroups, totalOddMenOut, "final_matches.xlsx");
+        Export.exportGroupsToJson(allGroups, totalOddMenOut, "final_matches.json");
     }
 
     // Step 1: Match Group Seekers to Groups

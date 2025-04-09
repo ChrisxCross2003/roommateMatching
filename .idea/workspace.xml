@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added simple excel export of final matches.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Export.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Export.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StableMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +31,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="roommateMatching" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -85,7 +92,7 @@
     &quot;Gradle.MatchTest.testSimpleGroups_oddManOut.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MatchTest.testSimplePairBackups.executor&quot;: &quot;Coverage&quot;,
     &quot;Gradle.MatchTest.testSimplePairs.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimplePairs_oddManOut.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.MatchTest.testSimplePairs_oddManOut.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.roommateMatching [:com.example.roommatematching.executable.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -281,8 +288,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -320,6 +327,8 @@
       <workItem from="1744131084072" duration="9022000" />
       <workItem from="1744140831577" duration="565000" />
       <workItem from="1744153111226" duration="304000" />
+      <workItem from="1744158357841" duration="351000" />
+      <workItem from="1744159032860" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>
@@ -482,6 +491,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added module info" />
