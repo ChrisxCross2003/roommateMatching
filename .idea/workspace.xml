@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added simple excel export of final matches." />
+    <list default="true" id="ceac9d1d-ebd2-4812-95c2-5d64a0d1c00e" name="Changes" comment="Added simple excel export of final matches.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Executable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/Executable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StableMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.example.roommatematching/StableMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/roommateSheet.xlsx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,44 +81,45 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build roommateMatching.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testOddManOutMale.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.MatchTest.testSimpleGroupBackups.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.MatchTest.testSimpleGroups.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.MatchTest.testSimpleGroups_oddManOut.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimplePairBackups.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.MatchTest.testSimplePairs.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MatchTest.testSimplePairs_oddManOut.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.roommateMatching [:com.example.roommatematching.executable.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/Documents/Java/roommateMatching&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.main.executor": "Run",
+    "Gradle.Build roommateMatching.executor": "Run",
+    "Gradle.MatchTest.testOddManOutMale.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroupBackups.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroups.executor": "Coverage",
+    "Gradle.MatchTest.testSimpleGroups_oddManOut.executor": "Run",
+    "Gradle.MatchTest.testSimplePairBackups.executor": "Run",
+    "Gradle.MatchTest.testSimplePairs.executor": "Run",
+    "Gradle.MatchTest.testSimplePairs_oddManOut.executor": "Run",
+    "Gradle.roommateMatching [:com.example.roommatematching.Executable.main()].executor": "Run",
+    "Gradle.roommateMatching [:com.example.roommatematching.executable.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chris/Documents/Java/roommateMatching",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;,
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore",
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.roommatematching" />
@@ -126,7 +132,7 @@
       <recent name="C:\Users\chris\IdeaProjects\roommateMatching" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MatchTest.testSimplePairs_oddManOut">
+  <component name="RunManager" selected="Application.Executable">
     <configuration name="Executable" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -272,10 +278,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MatchTest.testSimplePairBackups" />
         <item itemvalue="Gradle.MatchTest.testSimplePairs_oddManOut" />
         <item itemvalue="Gradle.MatchTest.testSimpleGroups_oddManOut" />
         <item itemvalue="Gradle.MatchTest.testSimplePairs" />
-        <item itemvalue="Gradle.MatchTest.testSimplePairBackups" />
         <item itemvalue="Gradle.MatchTest.testSimpleGroupBackups" />
       </list>
     </recent_temporary>
@@ -324,6 +330,7 @@
       <workItem from="1744153111226" duration="304000" />
       <workItem from="1744158357841" duration="351000" />
       <workItem from="1744159032860" duration="1374000" />
+      <workItem from="1744172096519" duration="1100000" />
     </task>
     <task id="LOCAL-00001" summary="added module info">
       <created>1684785302110</created>

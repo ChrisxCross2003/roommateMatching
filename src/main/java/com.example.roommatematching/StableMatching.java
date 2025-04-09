@@ -3,6 +3,8 @@ package com.example.roommatematching;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
 
 public class StableMatching {
 
@@ -59,12 +61,11 @@ public class StableMatching {
 
         // Step 4: Output Results
         reassignGroupIDs(allGroups);
-        outputResults();
+        //outputResults();
 
-        // Output compatability for Groups
-        analyzeGroupCompatibility(allGroups);
-        printOddManOut("Male");
-        printOddManOut("Female");
+        //analyzeGroupCompatibility(allGroups);
+        //printOddManOut("Male");
+        //printOddManOut("Female");
         totalOddMenOut.addAll(maleOddMenOut);
         totalOddMenOut.addAll(femaleOddMenOut);
         Export.exportGroupsToExcel(allGroups, totalOddMenOut, "final_matches.xlsx");
@@ -225,43 +226,35 @@ public class StableMatching {
     }
 
     private void matchOddMen(List<Student> oddMenOut, List<Student> groupBackups, List<Student> pairBackups) {
-        Iterator<Student> oddIterator = oddMenOut.iterator();
+        Set<Student> matchedStudents = new HashSet<>();
 
-        while (oddIterator.hasNext()) {
-            Student student1 = oddIterator.next();
-            Iterator<Student> backupIterator = groupBackups.iterator();
+        List<Group> newPairs = new ArrayList<>();
 
-            while (backupIterator.hasNext()) {
-                Student student2 = backupIterator.next();
-                // System.out.println("\nCan we match " + student1.getID() + " and " + student2.getID() + "?");
+        for (Student student1 : oddMenOut) {
+            if (matchedStudents.contains(student1)) continue;
 
-                // Match students if they are not the same student
+            for (Student student2 : groupBackups) {
+                if (matchedStudents.contains(student2)) continue;
                 if (!student1.equals(student2)) {
-                    // System.out.println("Yes! Adding to new pair.");
-
-                    // Create a pair group for the two students
-                    Group pairGroup = new Group(allGroups.size() + 1, 2, student1.getGender());
+                    Group pairGroup = new Group(allGroups.size() + newPairs.size() + 1, 2, student1.getGender());
                     pairGroup.addStudent(student1);
                     pairGroup.addStudent(student2);
-                    // Add the pair group to the list of groups
-                    allGroups.add(pairGroup);
+                    newPairs.add(pairGroup);
 
-                    // Remove the paired students from odd-men-out list and groupBackups
-                    oddIterator.remove();  // Remove student1 from odd-men-out.
-                    backupIterator.remove();  // Remove student2 from groupBackups
-                    oddMenOut.remove(student2); // remove student2 from odd-men-out
-                    groupBackups.remove(student1); // remove student1 from groupBackups
-                    break;  // Exit the inner loop once a match is found
+                    matchedStudents.add(student1);
+                    matchedStudents.add(student2);
+                    break;
                 }
-                // else {
-                    // System.out.println("No.");
-                // }
             }
-
-            // If no match was found, proceed to next student in oddMenOut
         }
 
-        // Once all matching is done, clean up the groupBackups list
+        // Add all new groups
+        allGroups.addAll(newPairs);
+
+        // Remove all matched students from both lists
+        oddMenOut.removeIf(matchedStudents::contains);
+        groupBackups.removeIf(matchedStudents::contains);
+
         removeMatchedBackups(groupBackups, pairBackups);
     }
 
