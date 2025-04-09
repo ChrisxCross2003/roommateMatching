@@ -1,62 +1,94 @@
-[
-    {
-        "Group ID": "1",
-        "Student 1 ID": "jd1aa",
-        "Student 1 Name": "John Doe",
-        "Student 2 ID": "as2bb",
-        "Student 2 Name": "Alex Smith",
-        "Student 3 ID": "N/A",
-        "Student 3 Name": "N/A",
-        "Student 4 ID": "N/A",
-        "Student 4 Name": "N/A",
-        "Overall Compatibility": "80.95",
-        "S1 → S2 Compatibility": "80.95",
-        "S2 → S3 Compatibility": "N/A",
-        "S3 → S4 Compatibility": "N/A"
-    },
-    {
-        "Group ID": "2",
-        "Student 1 ID": "lt3cc",
-        "Student 1 Name": "Leo Thomas",
-        "Student 2 ID": "bt4dd",
-        "Student 2 Name": "Ben Tran",
-        "Student 3 ID": "N/A",
-        "Student 3 Name": "N/A",
-        "Student 4 ID": "N/A",
-        "Student 4 Name": "N/A",
-        "Overall Compatibility": "80",
-        "S1 → S2 Compatibility": "80",
-        "S2 → S3 Compatibility": "N/A",
-        "S3 → S4 Compatibility": "N/A"
-    },
-    {
-        "Group ID": "3",
-        "Student 1 ID": "sk1aa",
-        "Student 1 Name": "Sara Kolsan",
-        "Student 2 ID": "ew2bb",
-        "Student 2 Name": "Emily Wong",
-        "Student 3 ID": "N/A",
-        "Student 3 Name": "N/A",
-        "Student 4 ID": "N/A",
-        "Student 4 Name": "N/A",
-        "Overall Compatibility": "80.95",
-        "S1 → S2 Compatibility": "80.95",
-        "S2 → S3 Compatibility": "N/A",
-        "S3 → S4 Compatibility": "N/A"
-    },
-    {
-        "Group ID": "4",
-        "Student 1 ID": "gp3cc",
-        "Student 1 Name": "Grace Patel",
-        "Student 2 ID": "rk4dd",
-        "Student 2 Name": "Rachel Kim",
-        "Student 3 ID": "N/A",
-        "Student 3 Name": "N/A",
-        "Student 4 ID": "N/A",
-        "Student 4 Name": "N/A",
-        "Overall Compatibility": "80",
-        "S1 → S2 Compatibility": "80",
-        "S2 → S3 Compatibility": "N/A",
-        "S3 → S4 Compatibility": "N/A"
-    }
-]
+{
+    "groupResults": [
+        {
+            "groupID": 1,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                80.95,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "John Doe",
+                    "id": "jd1aa"
+                },
+                {
+                    "name": "Alex Smith",
+                    "id": "as2bb"
+                }
+            ]
+        },
+        {
+            "groupID": 2,
+            "overallCompatibility": 80,
+            "compatibilityScores": [
+                80,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Leo Thomas",
+                    "id": "lt3cc"
+                },
+                {
+                    "name": "Ben Tran",
+                    "id": "bt4dd"
+                }
+            ]
+        },
+        {
+            "groupID": 3,
+            "overallCompatibility": 80.95,
+            "compatibilityScores": [
+                80.95,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Sarah Kolsan",
+                    "id": "sk1aa"
+                },
+                {
+                    "name": "Emily Wong",
+                    "id": "ew2bb"
+                }
+            ]
+        },
+        {
+            "groupID": 4,
+            "overallCompatibility": 80,
+            "compatibilityScores": [
+                80,
+                "N/A",
+                "N/A"
+            ],
+            "students": [
+                {
+                    "name": "Grace Patel",
+                    "id": "gp3cc"
+                },
+                {
+                    "name": "Rachel Kim",
+                    "id": "rk4dd"
+                }
+            ]
+        }
+    ],
+    "oddMenOut": [
+        {
+            "reason": "No compatible match or backup found",
+            "gender": "Male",
+            "name": "Mike Lee",
+            "id": "ml5ee"
+        },
+        {
+            "reason": "No compatible match or backup found",
+            "gender": "Female",
+            "name": "Tina Liu",
+            "id": "tl5ee"
+        }
+    ]
+}
